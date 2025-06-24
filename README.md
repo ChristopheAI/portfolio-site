@@ -3,12 +3,12 @@
 > Frontend Developer Portfolio showcasing B2B enterprise software expertise
 
 [![Deploy Portfolio to GitHub Pages](https://github.com/ChristopheAI/portfolio-site/actions/workflows/deploy.yml/badge.svg)](https://github.com/ChristopheAI/portfolio-site/actions/workflows/deploy.yml)
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://christopheai.github.io/portfolio-site)
-[![Performance](https://img.shields.io/badge/lighthouse-100%2F100-brightgreen)](https://christopheai.github.io/portfolio-site)
+[![Custom Domain](https://img.shields.io/badge/Domain-christophevh.dev-blue)](https://christophevh.dev)
+[![Performance](https://img.shields.io/badge/lighthouse-100%2F100-brightgreen)](https://christophevh.dev)
 
 ## 🚀 Live Demo
 
-**[View Portfolio →](https://christopheai.github.io/portfolio-site)**
+**[View Portfolio →](https://christophevh.dev)**
 
 ## 📋 About
 
