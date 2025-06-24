@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frontend Developer with business experience. Career transition from Cisco EMEA to business development to building solutions like Stock2coat. Open to work.">
+    <meta name="keywords" content="frontend developer, react developer, typescript, career transition, cisco emea, business background, open to work, belgium">
+    <meta name="author" content="Christophe">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Performance hints -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Christophe - Frontend Developer (Career Transition)">
+    <meta property="og:description" content="Frontend Developer making the transition from business development. Building solutions like Stock2coat. Open to work.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://christophe.dev">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Christophe - Frontend Developer (Career Transition)">
+    <meta name="twitter:description" content="Frontend Developer making the transition from business development. Building solutions like Stock2coat. Open to work.">
+    <title>Christophe - Frontend Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="preload" href="/src/css/main.css" as="style">
+    <link rel="preload" href="/src/assets/images/avatar-christophe.jpg" as="image">
+    
+    <!-- Critical CSS for above-the-fold content -->
+    <style>
+        :root{--color-primary:#000000;--color-secondary:#ffffff;--color-accent:#0066cc;--color-text:#333333;--color-text-light:#666666;--color-bg:#ffffff;--color-bg-alt:#f8f9fa;--font-primary:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;--space-xs:0.25rem;--space-sm:0.5rem;--space-md:1rem;--space-lg:2rem;--space-xl:4rem;--transition-base:0.3s ease}*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{font-size:16px;scroll-behavior:smooth}body{font-family:var(--font-primary);color:var(--color-text);background-color:var(--color-bg);line-height:1.6}.site-header{position:fixed;top:0;left:0;right:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);z-index:100;border-bottom:1px solid rgba(0,0,0,0.1)}.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:var(--space-xl) var(--space-lg)}.hero__container{max-width:1200px;width:100%;text-align:center}.hero__content{display:flex;flex-direction:column;align-items:center;gap:var(--space-lg)}.hero__title{font-size:clamp(2.5rem,5vw,4rem);font-weight:700;margin-bottom:var(--space-md)}.hero__subtitle{font-size:1.25rem;color:var(--color-text-light);margin-bottom:var(--space-sm)}.hero__tagline{font-size:1.125rem;color:var(--color-text-light);margin-bottom:var(--space-lg)}.hero__cta{display:inline-block;padding:var(--space-md) var(--space-xl);border-radius:10px;text-decoration:none;font-weight:600;transition:all var(--transition-base);margin:var(--space-sm)}.hero__cta--primary{background:linear-gradient(135deg,var(--color-accent),#0052a3);color:white}.hero__avatar{width:120px;height:120px;border-radius:50%;overflow:hidden;margin-bottom:var(--space-lg);position:relative}.hero__image{width:100%;height:100%;object-fit:cover}
+    </style>
+    
+    <link rel="stylesheet" href="/src/css/main.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav" aria-label="Main navigation">
+            <div class="nav__container">
+                <a href="#home" class="nav__logo">CVH</a>
+                <ul class="nav__menu">
+                    <li><a href="#home" class="nav__link">Home</a></li>
+                    <li><a href="#projects" class="nav__link">Projects</a></li>
+                    <li><a href="#about" class="nav__link">About</a></li>
+                    <li><a href="#skills" class="nav__link">Skills</a></li>
+                    <li><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+                <button class="nav__toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <div class="hero__avatar">
+                        <img src="/src/assets/images/avatar-christophe.jpg" 
+                             alt="Christophe - Frontend Developer" 
+                             class="hero__image"
+                             loading="eager">
+                        <div class="hero__avatar-fallback">
+                            <span class="hero__initials">CVH</span>
+                        </div>
+                    </div>
+                    <div class="hero__text">
+                        <h1 class="hero__title">
+                            <span class="hero__greeting">Hi, I'm</span>
+                            <span class="hero__name">Christophe</span>
+                        </h1>
+                        <p class="hero__subtitle">Frontend Developer & Problem-solver</p>
+                        <p class="hero__description">From 7 years at Cisco to business development to building solutions like Stock2coat. I'm making the switch to frontend because I love creating things people actually use.</p>
+                        <div class="hero__actions">
+                            <a href="#projects" class="hero__cta hero__cta--primary">See Real Demos</a>
+                            <a href="#contact" class="hero__cta hero__cta--secondary">Start a Conversation</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__scroll-indicator">
+                    <span class="hero__scroll-text">Scroll to explore</span>
+                    <div class="hero__scroll-arrow"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="projects__header">
+                    <h2 class="projects__title">Featured Projects</h2>
+                    <p class="projects__subtitle">Real solutions built with modern technologies</p>
+                </div>
+                <div class="projects__grid">
+                    <!-- Stock2coat Project -->
+                    <article class="project-card project-card--featured">
+                        <div class="project-card__status">
+                            <span class="project-card__badge project-card__badge--live">✅ Live</span>
+                        </div>
+                        <div class="project-card__image">
+                            <video class="project-card__video" 
+                                   autoplay 
+                                   muted 
+                                   loop 
+                                   playsinline 
+                                   aria-label="Stock2coat demo video" 
+                                   poster="/src/assets/images/stock2coat-demo.gif" 
+                                   preload="none">
+                                <source src="/src/assets/images/stock2coat-demo.mp4" type="video/mp4">
+                            </video>
+                            <!-- Fallback for browsers that don't support video -->
+                            <div class="video-fallback">Video not supported</div>
+                            <div class="project-card__image-overlay">
+                                <span class="project-card__view-hint">🎬 Live Demo Preview</span>
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Stock2coat</h3>
+                            <p class="project-card__subtitle">Inventory Forecasting Power</p>
+                            <p class="project-card__description">
+                                Significantly reduces powder-coating stockouts. React 18 + TypeScript frontend, Node.js API, PostgreSQL via Neon, all wrapped in a sleek shadcn/ui interface.
+                            </p>
+                            <div class="project-card__tech">
+                                <span class="tech-badge tech-badge--react">React 18</span>
+                                <span class="tech-badge tech-badge--typescript">TypeScript</span>
+                                <span class="tech-badge tech-badge--vite">Vite</span>
+                                <span class="tech-badge tech-badge--tailwind">Tailwind</span>
+                                <span class="tech-badge tech-badge--node">Node.js</span>
+                                <span class="tech-badge tech-badge--postgresql">PostgreSQL</span>
+                            </div>
+                            <div class="project-card__actions">
+                                <a href="/stock2coat-case-study.html" class="project-card__btn project-card__btn--primary">
+                                    View Case Study
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Portfolio Website Project -->
+                    <article class="project-card">
+                        <div class="project-card__status">
+                            <span class="project-card__badge project-card__badge--live">✅ Live</span>
+                        </div>
+                        <div class="project-card__image">
+                            <img src="/src/assets/images/portfolio-preview.jpg" 
+                                 alt="Portfolio website homepage"
+                                 class="project-card__img"
+                                 loading="lazy">
+                            <div class="project-card__image-overlay">
+                                <span class="project-card__view-hint">You're looking at it!</span>
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Portfolio Website</h3>
+                            <p class="project-card__subtitle">Loads in under&nbsp;1&nbsp;second</p>
+                            <p class="project-card__description">
+                                You're browsing it now: vanilla JS, modern CSS, optimized for performance and fast loading.
+                            </p>
+                            <div class="project-card__tech">
+                                <span class="tech-badge tech-badge--vite">Vite</span>
+                                <span class="tech-badge tech-badge--javascript">Vanilla JS</span>
+                                <span class="tech-badge tech-badge--css">Modern CSS</span>
+                                <span class="tech-badge tech-badge--html">Semantic HTML</span>
+                            </div>
+                            <div class="project-card__actions">
+                                <a href="#" class="project-card__btn project-card__btn--secondary" target="_blank">
+                                    View Source
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="projects__footer">
+                    <p class="projects__more">More projects available on <a href="#" target="_blank" class="projects__link">GitHub</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about__content">
+                    <h2 class="about__title">The Real Story Behind VibeCoder</h2>
+                    <div class="about__grid">
+                        <div class="about__text">
+                            <div class="about__intro">
+                                <h3>How 17 Years Led to This Moment</h3>
+                                <p class="about__lead">They call me <strong>VibeCoder</strong>. I follow my curiosities wherever they lead. What started as "just another server to fix" at Cisco became a 17-year journey that ends with me building the interfaces people actually love.</p>
+                                <p><strong>Here's the real story.</strong></p>
+                            </div>
+                            
+                            <div class="about__story">
+                                <h3>🔧 Years 1-11: The Invisible Foundation (2008-2019)</h3>
+                                <p><strong>7 years at Cisco EMEA, Brussels.</strong> Enterprise troubleshooting across Europe, Middle East, Africa. Gained deep technical expertise in complex systems.</p>
+                                <p><strong>4 years leading IT at Fixzit.</strong> Multiple client projects. Business operations. The works.</p>
+                                <p><strong>The realization?</strong> Infrastructure work means users never see you. They only notice when things break.</p>
+                                <p>I wanted to build something people would actually <em>enjoy</em> using.</p>
+                                
+                                <h3>🏢 Years 12-16: Deep in the Backend (2019-2024)</h3>
+                                <p><strong>5+ years as System Engineer at acom NV.</strong> Enterprise systems. Complex infrastructure. I understood the technical side inside and out.</p>
+                                <p>But something was missing.</p>
+                                
+                                <h3>😤 The Awakening: CaptureTech CRM Hell (March-July 2024)</h3>
+                                <p><strong>This changed everything.</strong></p>
+                                <p>First business development role after 16 years in technical positions. Working with an old CRM system that significantly slowed down workflows. Every. Single. Day.</p>
+                                <p>I'd sit there thinking: "There has to be a better way to build user interfaces."</p>
+                                <p><strong>That was my moment.</strong> The frustration of using terrible software lit a fire in me.</p>
+                                
+                                <h3>🔍 The Eye-Opener: Elk Factory (August 2024-January 2025)</h3>
+                                <p><strong>Elite Elastic Partner.</strong> Enterprise Search, Observability, Cybersecurity.</p>
+                                <p>Here I discovered Elasticsearch. Sophisticated enterprise software that actually <em>worked</em>. Beautiful, powerful, elegant.</p>
+                                <p><strong>Plot twist:</strong> While doing business development, I was diving deep into the software side. Learning how the best enterprise tools are built.</p>
+                                <p>This is what good software looks like.</p>
+                                
+                                <h3>🎯 The Final Straw: Relaxy (February-April 2025)</h3>
+                                <p>My last business development role. Learned their SaaS platform inside out. Conducted market research.</p>
+                                <p><strong>The whole time I was thinking:</strong> "I want to build solutions like this, not just sell them."</p>
+                                <p><strong>The realization hit:</strong> I was selling other people's solutions when I wanted to build my own.</p>
+                                
+                                <h3>🚀 The Switch: Frontend Developer (April 2025-Present)</h3>
+                                <p><strong>Open to work. Career transition.</strong></p>
+                                <p>Built Stock2coat in 2 weeks to prove this is what I want to do full time.</p>
+                                
+                                <div class="about__quote">
+                                    <blockquote>
+                                        <p>"You made this work like a dream, friend."</p>
+                                        <cite>– Nicolas, using Stock2coat for the first time</cite>
+                                    </blockquote>
+                                </div>
+                                
+                                <p>My best friend of 25+ years. Excel chaos to production-ready app in 2 weeks.</p>
+                                <p><strong>That's when I knew.</strong> This is my calling.</p>
+                            </div>
+                            
+                            <div class="about__values">
+                                <h3>Why I'm Different</h3>
+                                <p><strong>Enterprise Backend + Business Operations + UX Frustration + Frontend Passion</strong></p>
+                                
+                                <p>My unique combination includes:</p>
+                                <ul>
+                                    <li>10+ years in enterprise infrastructure</li>
+                                    <li>4 years managing multiple client projects</li>
+                                    <li>Firsthand experience with UX pain points</li>
+                                    <li>Exposure to sophisticated enterprise software like Elasticsearch</li>
+                                </ul>
+                                <p><strong>This background shapes how I approach frontend development.</strong></p>
+                                
+                                <h3>🎯 Key Strengths</h3>
+                                <div class="about__principles">
+                                    <div class="about__principle">
+                                        <span class="about__principle-icon">🔨</span>
+                                        <div>
+                                            <h4>I Build Real Solutions</h4>
+                                            <p>Stock2coat saves Nicolas significant time daily. Real impact, practical applications.</p>
+                                        </div>
+                                    </div>
+                                    <div class="about__principle">
+                                        <span class="about__principle-icon">💼</span>
+                                        <div>
+                                            <h4>I Understand Business Impact</h4>
+                                            <p>16 years in business operations. I know ROI matters more than perfect code.</p>
+                                        </div>
+                                    </div>
+                                    <div class="about__principle">
+                                        <span class="about__principle-icon">🚀</span>
+                                        <div>
+                                            <h4>I Leverage AI Tools Effectively</h4>
+                                            <p>Replit Agent, Bolt, Cursor. AI handles boilerplate so I can focus on solving business problems.</p>
+                                        </div>
+                                    </div>
+                                    <div class="about__principle">
+                                        <span class="about__principle-icon">🎯</span>
+                                        <div>
+                                            <h4>I Think Enterprise-Scale</h4>
+                                            <p>From Cisco to Elasticsearch. I understand complexity and build for scale.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="about__sidebar">
+                            <div class="about__card about__card--highlight">
+                                <div class="about__card-header">
+                                    <span class="about__card-icon">⚡</span>
+                                    <h4>The Stack That Powers Everything</h4>
+                                </div>
+                                <div class="about__tech-grid">
+                                    <span class="about__tech">JavaScript</span>
+                                    <span class="about__tech">TypeScript</span>
+                                    <span class="about__tech">React</span>
+                                    <span class="about__tech">Node.js</span>
+                                    <span class="about__tech">PostgreSQL</span>
+                                    <span class="about__tech">Elasticsearch</span>
+                                </div>
+                            </div>
+                            
+                            <div class="about__card">
+                                <div class="about__card-header">
+                                    <span class="about__card-icon">🎖️</span>
+                                    <h4>Real Experience</h4>
+                                </div>
+                                <ul>
+                                    <li><strong>Enterprise Infrastructure:</strong> 17 years</li>
+                                    <li><strong>Multi-client Management:</strong> 4 years</li>
+                                    <li><strong>UX Frustration:</strong> Lived it daily</li>
+                                    <li><strong>Enterprise Software:</strong> Elasticsearch exposure</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="about__card">
+                                <div class="about__card-header">
+                                    <span class="about__card-icon">🧠</span>
+                                    <h4>What This Means for You</h4>
+                                </div>
+                                <p>You're hiring someone who brings together:</p>
+                                <ul>
+                                    <li>Enterprise complexity understanding</li>
+                                    <li>Business operations knowledge</li>
+                                    <li>Real UX pain point experience</li>
+                                    <li>Focus on practical solutions that work</li>
+                                </ul>
+                                <p><strong>This combination offers unique value.</strong></p>
+                            </div>
+                            
+                            <div class="about__testimonial">
+                                <div class="about__testimonial-content">
+                                    <p>"Ready to build something extraordinary?"</p>
+                                    <cite>– The question that matters</cite>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about__cta">
+                        <div class="about__cta-content">
+                            <h3>🚀 Ready to Build Something Extraordinary?</h3>
+                            <p>I don't just write code – I solve problems that matter. Let's turn your business challenge into a digital solution that actually works.</p>
+                            <div class="about__cta-buttons">
+                                <a href="#contact" class="about__btn about__btn--primary">Start a Conversation</a>
+                                <a href="/stock2coat-case-study.html" class="about__btn about__btn--secondary">See My Work</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work-history" class="work-history">
+            <div class="container">
+                <div class="work-history__content">
+                    <h2 class="work-history__title">Work History</h2>
+                    <p class="work-history__intro">The journey from infrastructure to interfaces:</p>
+                    
+                    <div class="work-history__timeline">
+                        <div class="work-history__item work-history__item--current">
+                            <div class="work-history__period">April 2025 - Present</div>
+                            <div class="work-history__details">
+                                <h3>Frontend Developer</h3>
+                                <p class="work-history__company">Open to Work - Career Transition</p>
+                                <p class="work-history__description">Making the switch from Business Development to Frontend Development. Building projects like Stock2coat to demonstrate technical skills and passion for creating solutions people love.</p>
+                                <div class="work-history__achievements">
+                                    <span class="achievement">Built Stock2coat in 2 weeks</span>
+                                    <span class="achievement">Career transition to Frontend</span>
+                                    <span class="achievement">Business + Technical combination</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="work-history__item">
+                            <div class="work-history__period">February - April 2025</div>
+                            <div class="work-history__details">
+                                <h3>Business Developer</h3>
+                                <p class="work-history__company">Relaxy</p>
+                                <p class="work-history__description">Final business development role before transitioning to frontend. Learned the Relaxy SaaS platform inside out and conducted market research. This experience solidified my decision to build solutions myself.</p>
+                                <div class="work-history__achievements">
+                                    <span class="achievement">SaaS platform expertise</span>
+                                    <span class="achievement">Market research & prospecting</span>
+                                    <span class="achievement">Decision point for career change</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="work-history__item">
+                            <div class="work-history__period">August 2024 - January 2025</div>
+                            <div class="work-history__details">
+                                <h3>Business Developer</h3>
+                                <p class="work-history__company">Elk Factory</p>
+                                <p class="work-history__description">6 months in Kontich, Flemish Region. Business development while exploring and deepening my understanding of the software side. The technical itch was growing stronger. Here I came into contact with Elasticsearch/Elastic software - an Elite Elastic Partner specializing in Enterprise Search, Observability, and Cybersecurity.</p>
+                                <div class="work-history__achievements">
+                                    <span class="achievement">Elasticsearch/Elastic exposure</span>
+                                    <span class="achievement">Evening coding sessions</span>
+                                    <span class="achievement">Enterprise software understanding</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="work-history__item">
+                            <div class="work-history__period">March - July 2024</div>
+                            <div class="work-history__details">
+                                <h3>Business Developer</h3>
+                                <p class="work-history__company">CaptureTech</p>
+                                <p class="work-history__description">5 months in Wommelgem, Flemish Region. First business development role after years in technical positions. Worked with an old CRM system that significantly slowed down workflows - experiencing firsthand the frustration of using non-user-friendly software.</p>
+                                <div class="work-history__achievements">
+                                    <span class="achievement">Business development transition</span>
+                                    <span class="achievement">Poor UX frustration</span>
+                                    <span class="achievement">Workflow inefficiency experience</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="work-history__item">
+                            <div class="work-history__period">2019 - 2024</div>
+                            <div class="work-history__details">
+                                <h3>System Engineer</h3>
+                                <p class="work-history__company">acom NV</p>
+                                <p class="work-history__description">5+ years as System Engineer in Flemish Region, Belgium. Deep technical expertise in enterprise systems and infrastructure.</p>
+                                <div class="work-history__achievements">
+                                    <span class="achievement">5+ years system engineering</span>
+                                    <span class="achievement">Enterprise-level troubleshooting</span>
+                                    <span class="achievement">Flemish Region expertise</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="work-history__item">
+                            <div class="work-history__period">2015 - 2019</div>
+                            <div class="work-history__details">
+                                <h3>IT Verantwoordelijke</h3>
+                                <p class="work-history__company">Fixzit</p>
+                                <p class="work-history__description">4 years leading IT operations at Fixzit in Flemish Region, Belgium. This is where I learned to manage multiple client projects and understand business needs.</p>
+                                <div class="work-history__achievements">
+                                    <span class="achievement">4 years IT leadership</span>
+                                    <span class="achievement">Multi-client management</span>
+                                    <span class="achievement">Business operations</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="work-history__item">
+                            <div class="work-history__period">2008 - 2014</div>
+                            <div class="work-history__details">
+                                <h3>IT Support & Troubleshooting Engineer</h3>
+                                <p class="work-history__company">Cisco EMEA</p>
+                                <p class="work-history__description">7 years at Cisco in Brussels - the foundation of my technical expertise. Enterprise-level support across Europe, Middle East, and Africa.</p>
+                                <div class="work-history__achievements">
+                                    <span class="achievement">7 years at Cisco</span>
+                                    <span class="achievement">EMEA region coverage</span>
+                                    <span class="achievement">Enterprise troubleshooting</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="work-history__transition">
+                        <h3>🔄 The Plot Twist</h3>
+                        <p>Here's the thing: after years in business development, I realized I was selling other people's solutions when I wanted to build my own. Stock2coat started as a side project but became my "aha moment" - this is what I want to do full time. From Cisco technical foundation to business understanding to frontend passion, I'm ready to create solutions that actually work.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="multi-project" class="multi-project">
+            <div class="container">
+                <div class="multi-project__content">
+                    <h2 class="multi-project__title">What Makes My Background Different for B2B Companies</h2>
+                    <p class="multi-project__intro">My 17-year enterprise journey gives me a unique perspective on business software development.</p>
+                    
+                    <div class="multi-project__grid">
+                        <div class="multi-project__card">
+                            <div class="multi-project__icon">🔧</div>
+                            <h3>Deep Enterprise Systems Experience</h3>
+                            <p><strong>Cisco EMEA, 7 years.</strong> Troubleshooting Fortune 500 systems across Europe, Middle East, Africa. <strong>acom NV, 5+ years.</strong> Complex enterprise infrastructure. I understand how backend systems work in practice, not just theory.</p>
+                            <div class="multi-project__metric">
+                                <span class="metric-number">17 Years</span>
+                                <span class="metric-label">Enterprise infrastructure</span>
+                            </div>
+                        </div>
+                        
+                        <div class="multi-project__card">
+                            <div class="multi-project__icon">🏢</div>
+                            <h3>Multi-Client Project Management</h3>
+                            <p><strong>Fixzit, 4 years as IT leader.</strong> Managing multiple client projects simultaneously - different needs, competing deadlines, constant communication. This experience taught me how to balance priorities and deliver on time.</p>
+                            <div class="multi-project__metric">
+                                <span class="metric-number">4 Years</span>
+                                <span class="metric-label">Multi-client management</span>
+                            </div>
+                        </div>
+                        
+                        <div class="multi-project__card">
+                            <div class="multi-project__icon">😤</div>
+                            <h3>User Experience Perspective</h3>
+                            <p><strong>CaptureTech CRM experience.</strong> 5 months using software that slowed down workflows daily. This firsthand frustration with poor UX drives my focus on building interfaces that actually help users be productive.</p>
+                            <div class="multi-project__metric">
+                                <span class="metric-number">Daily</span>
+                                <span class="metric-label">UX insights gained</span>
+                            </div>
+                        </div>
+                        
+                        <div class="multi-project__card">
+                            <div class="multi-project__icon">🔍</div>
+                            <h3>Enterprise Software Quality Standards</h3>
+                            <p><strong>Elk Factory.</strong> Elite Elastic Partner. Exposure to Elasticsearch - sophisticated enterprise software that demonstrates what quality looks like. This experience shaped my understanding of enterprise-grade solutions.</p>
+                            <div class="multi-project__metric">
+                                <span class="metric-number">Elite</span>
+                                <span class="metric-label">Enterprise software exposure</span>
+                            </div>
+                        </div>
+                        
+                        <div class="multi-project__card">
+                            <div class="multi-project__icon">🚀</div>
+                            <h3>Real Business Impact Focus</h3>
+                            <p><strong>Stock2coat.</strong> Built in 2 weeks. Saves Nicolas significant time daily. Reduces stockout incidents substantially. From Excel chaos to production-ready solution with measurable ROI.</p>
+                            <div class="multi-project__metric">
+                                <span class="metric-number">Proven</span>
+                                <span class="metric-label">Business impact</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="multi-project__conclusion">
+                        <h3>The Combination</h3>
+                        <p><strong>You're hiring someone who brings together:</strong></p>
+                        <ul>
+                            <li><strong>Enterprise complexity understanding</strong> (17 years hands-on experience)</li>
+                            <li><strong>Multi-project coordination skills</strong> (4 years managing multiple clients)</li>
+                            <li><strong>User empathy from real frustrations</strong> (lived the pain of bad UX)</li>
+                            <li><strong>Quality software recognition</strong> (exposure to best-in-class solutions)</li>
+                            <li><strong>Business value delivery</strong> (Stock2coat demonstrates impact)</li>
+                        </ul>
+                        <p><strong>This combination is valuable in the frontend market.</strong></p>
+                        <p><strong>Ready to work with someone who understands both technical and business sides?</strong></p>
+                    </div>
+                    
+                    <div class="multi-project__tech">
+                        <h3>Technology Stack for Enterprise</h3>
+                        <p>Focused on proven technologies that work in business environments:</p>
+                        <div class="multi-project__tech-grid">
+                            <span class="tech-badge tech-badge--javascript">JavaScript</span>
+                            <span class="tech-badge tech-badge--react">React</span>
+                            <span class="tech-badge tech-badge--typescript">TypeScript</span>
+                            <span class="tech-badge tech-badge--postgresql">PostgreSQL</span>
+                            <span class="tech-badge tech-badge--elasticsearch">Elasticsearch</span>
+                            <span class="tech-badge tech-badge--enterprise">Enterprise Systems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2>What I Work With</h2>
+                <div class="skills__content">
+                    <p class="skills__intro">The tools that help me turn ideas into reality:</p>
+                    
+                    <div class="skills__grid">
+                        <div class="skills__category">
+                            <h3>Frontend</h3>
+                            <div class="skills__badges">
+                                <span class="skill-badge skill-badge--javascript">JavaScript</span>
+                                <span class="skill-badge skill-badge--typescript">TypeScript</span>
+                                <span class="skill-badge skill-badge--react">React</span>
+                                <span class="skill-badge skill-badge--vite">Vite</span>
+                                <span class="skill-badge skill-badge--tailwind">Tailwind</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skills__category">
+                            <h3>Backend & Database</h3>
+                            <div class="skills__badges">
+                                <span class="skill-badge skill-badge--node">Node.js</span>
+                                <span class="skill-badge skill-badge--postgresql">PostgreSQL</span>
+                                <span class="skill-badge">Express</span>
+                                <span class="skill-badge">Drizzle ORM</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skills__category">
+                            <h3>AI & Tools</h3>
+                            <div class="skills__badges">
+                                <span class="skill-badge">Replit Agent</span>
+                                <span class="skill-badge">Bolt.new</span>
+                                <span class="skill-badge">Cursor</span>
+                                <span class="skill-badge">Claude</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="contact__title">Ready to Build Together?</h2>
+                <div class="contact__content">
+                    <p class="contact__intro">Looking for a Frontend Developer who combines technical skills with business understanding? I'm open to work and ready to build solutions that matter.</p>
+                    
+                    <div class="contact__options">
+                        <div class="contact__option">
+                            <h3>💬 Quick Chat</h3>
+                            <p>Let's talk about your project. No sales pitch, just a friendly conversation about what you're building.</p>
+                            <a href="mailto:hello@christophe.dev" class="contact__btn">Send an Email</a>
+                        </div>
+                        
+                        <div class="contact__option">
+                            <h3>🔗 Connect</h3>
+                            <p>Follow along with my latest projects and AI-powered development experiments.</p>
+                            <div class="contact__social">
+                                <a href="#" class="contact__social-link">GitHub</a>
+                                <a href="#" class="contact__social-link">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="contact__note">Usually respond within 24 hours. Looking forward to hearing from you!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 Christophe. Built with passion and vanilla JS.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stock2coat Case Study - Full-stack inventory management system by Christophe">
+    <title>Stock2coat Case Study - Christophe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/main.css">
+    <style>
+        /* Typography Variables */
+        :root {
+            --font-heading: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-mono: 'JetBrains Mono', 'SF Mono', Monaco, 'Cascadia Code', monospace;
+        }
+        
+        .case-study {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            line-height: 1.65;
+            font-family: var(--font-body);
+            font-size: 1.125rem;
+        }
+        
+        .case-study__header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--color-border);
+        }
+        
+        .case-study__title {
+            font-family: var(--font-heading);
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.1;
+        }
+        
+        .case-study__subtitle {
+            font-family: var(--font-body);
+            font-size: 1.375rem;
+            font-weight: 400;
+            color: var(--color-text-secondary);
+            margin-bottom: 2rem;
+            line-height: 1.5;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .case-study__meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+        
+        .case-study__meta-item {
+            text-align: center;
+        }
+        
+        .case-study__meta-label {
+            font-family: var(--font-body);
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--color-text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 0.5rem;
+        }
+        
+        .case-study__meta-value {
+            font-family: var(--font-body);
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--color-text-primary);
+        }
+        
+        .case-study__video {
+            width: 100%;
+            max-width: 800px;
+            margin: 2rem auto;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .case-study__section {
+            margin-bottom: 3rem;
+        }
+        
+        .case-study__section-title {
+            font-family: var(--font-heading);
+            font-size: 2.25rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            margin-top: 3rem;
+            color: var(--color-text-primary);
+            letter-spacing: -0.01em;
+            line-height: 1.2;
+        }
+        
+        .case-study__content {
+            font-family: var(--font-body);
+            color: var(--color-text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+        
+        .case-study__content p {
+            margin-bottom: 1.25rem;
+        }
+        
+        .case-study__content p:last-child {
+            margin-bottom: 0;
+        }
+        
+        .case-study__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .case-study__card {
+            background: var(--color-surface);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--color-border);
+        }
+        
+        .case-study__card-title {
+            font-family: var(--font-heading);
+            font-size: 1.375rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--color-text-primary);
+            line-height: 1.3;
+        }
+        
+        .case-study__list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .case-study__list-item {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--color-border-light);
+            display: flex;
+            align-items: center;
+        }
+        
+        .case-study__list-item:last-child {
+            border-bottom: none;
+        }
+        
+        .case-study__list-item::before {
+            content: "✓";
+            color: var(--color-success);
+            font-weight: bold;
+            margin-right: 0.75rem;
+        }
+        
+        .case-study__tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin: 1.5rem 0;
+        }
+        
+        .case-study__tech-badge {
+            padding: 0.6rem 1.2rem;
+            background: var(--color-primary);
+            color: white;
+            border-radius: 8px;
+            font-family: var(--font-mono);
+            font-size: 0.875rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+        }
+        
+        .case-study__back {
+            position: fixed;
+            top: 2rem;
+            left: 2rem;
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--color-text-primary);
+            font-family: var(--font-body);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+        
+        .case-study__back:hover {
+            background: var(--color-primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .case-study__highlight {
+            background: linear-gradient(135deg, var(--color-primary-light), var(--color-accent-light));
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border-left: 4px solid var(--color-primary);
+        }
+        
+        .case-study__highlight-title {
+            font-family: var(--font-heading);
+            font-size: 1.625rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--color-text-primary);
+            line-height: 1.3;
+        }
+        
+        /* Special Typography Elements */
+        .case-study__content strong {
+            font-weight: 600;
+            color: var(--color-text-primary);
+        }
+        
+        .case-study__content h3 {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--color-text-primary);
+            line-height: 1.3;
+        }
+        
+        /* Quote styling for Nicolas quotes */
+        .case-study__content p:has-text("You made this work like a dream") {
+            font-style: italic;
+            font-size: 1.2rem;
+            color: var(--color-accent);
+            padding-left: 1.5rem;
+            border-left: 3px solid var(--color-accent);
+            margin: 2rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            .case-study {
+                padding: 1rem;
+                font-size: 1rem;
+            }
+            
+            .case-study__title {
+                font-size: 2.5rem;
+            }
+            
+            .case-study__subtitle {
+                font-size: 1.25rem;
+            }
+            
+            .case-study__section-title {
+                font-size: 1.875rem;
+            }
+            
+            .case-study__meta {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .case-study__back {
+                position: static;
+                margin-bottom: 2rem;
+                display: inline-block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="/" class="case-study__back">← Back to Portfolio</a>
+    
+    <main class="case-study">
+        <header class="case-study__header">
+            <h1 class="case-study__title">Stock2coat</h1>
+            <p class="case-study__subtitle">How I Built a Custom App That Saves My Friend 2 Hours Daily</p>
+            
+            <div class="case-study__meta">
+                <div class="case-study__meta-item">
+                    <div class="case-study__meta-label">Status</div>
+                    <div class="case-study__meta-value">✅ Live & Production</div>
+                </div>
+                <div class="case-study__meta-item">
+                    <div class="case-study__meta-label">Timeline</div>
+                    <div class="case-study__meta-value">2 weeks (intensive)</div>
+                </div>
+                <div class="case-study__meta-item">
+                    <div class="case-study__meta-label">Type</div>
+                    <div class="case-study__meta-value">Personal Learning Project</div>
+                </div>
+            </div>
+            
+            <video class="case-study__video" autoplay muted loop playsinline>
+                <source src="/src/assets/images/stock2coat-demo.mp4" type="video/mp4">
+            </video>
+        </header>
+
+        <section class="case-study__section">
+            <h2 class="case-study__section-title">Project Overview</h2>
+            <div class="case-study__content">
+                <p>Stock2coat started with a conversation between friends. Nicolas, my best friend of 25+ years, had just started his powder coating business and faced a daily challenge: managing his powder inventory with Excel sheets and paper logs. With 4-5 weighing sessions per day, manually tracking powder consumption was becoming a bottleneck.</p>
+                
+                <p>When Nicolas asked me to help find existing software, we discovered that nothing matched his specific workflow needs. The available solutions were either too complex or missed key features he needed. That's when I proposed: "What if I build something custom for you?"</p>
+                
+                <p>What followed was an intensive two-week collaboration. Nicolas would weigh his powder containers, manually input the data, and need real-time insights into his inventory levels. After two weeks, he said: "You made this work like a dream, friend." That validation from someone running a real business using the app daily was incredibly rewarding.</p>
+                
+                <p>This project became the perfect intersection of friendship, real business needs, and technical learning—resulting in a custom solution that actually solves daily operational challenges.</p>
+            </div>
+        </section>
+
+        <div class="case-study__highlight">
+            <h3 class="case-study__highlight-title">Learning Goals Achieved</h3>
+            <p>Built a full-stack TypeScript app that significantly improves inventory tracking efficiency. Real users, real results, deployed to production in just 14 days.</p>
+        </div>
+
+        <section class="case-study__section">
+            <h2 class="case-study__section-title">Technical Architecture</h2>
+            
+            <div class="case-study__tech-stack">
+                <span class="case-study__tech-badge">React 18</span>
+                <span class="case-study__tech-badge">TypeScript</span>
+                <span class="case-study__tech-badge">Vite</span>
+                <span class="case-study__tech-badge">Zustand</span>
+                <span class="case-study__tech-badge">TanStack Query</span>
+                <span class="case-study__tech-badge">React Hook Form</span>
+                <span class="case-study__tech-badge">Zod</span>
+                <span class="case-study__tech-badge">shadcn/ui</span>
+                <span class="case-study__tech-badge">Tailwind CSS</span>
+                <span class="case-study__tech-badge">Node.js</span>
+                <span class="case-study__tech-badge">Express</span>
+                <span class="case-study__tech-badge">Drizzle ORM</span>
+                <span class="case-study__tech-badge">Neon PostgreSQL</span>
+                <span class="case-study__tech-badge">Replit</span>
+            </div>
+
+            <div class="case-study__grid">
+                <div class="case-study__card">
+                    <h3 class="case-study__card-title">Frontend Architecture</h3>
+                    <ul class="case-study__list">
+                        <li class="case-study__list-item">React 18 with TypeScript for type safety</li>
+                        <li class="case-study__list-item">Vite for fast development and building</li>
+                        <li class="case-study__list-item">shadcn/ui for consistent design system</li>
+                        <li class="case-study__list-item">Tailwind CSS for utility-first styling</li>
+                        <li class="case-study__list-item">Zustand for state management</li>
+                        <li class="case-study__list-item">TanStack Query for API calls</li>
+                        <li class="case-study__list-item">React Hook Form + Zod for form validation</li>
+                    </ul>
+                </div>
+
+                <div class="case-study__card">
+                    <h3 class="case-study__card-title">Backend Architecture</h3>
+                    <ul class="case-study__list">
+                        <li class="case-study__list-item">Node.js with Express framework</li>
+                        <li class="case-study__list-item">TypeScript for backend type safety</li>
+                        <li class="case-study__list-item">RESTful API design</li>
+                        <li class="case-study__list-item">Open access (no authentication layer)</li>
+                        <li class="case-study__list-item">Input validation with Zod schemas</li>
+                        <li class="case-study__list-item">Error handling middleware</li>
+                    </ul>
+                </div>
+
+                <div class="case-study__card">
+                    <h3 class="case-study__card-title">Database Design</h3>
+                    <ul class="case-study__list">
+                        <li class="case-study__list-item">PostgreSQL for relational data</li>
+                        <li class="case-study__list-item">Drizzle ORM for type-safe queries</li>
+                        <li class="case-study__list-item">Neon Database for serverless hosting</li>
+                        <li class="case-study__list-item">Normalized schema design</li>
+                        <li class="case-study__list-item">Indexing for performance</li>
+                        <li class="case-study__list-item">Migration system</li>
+                    </ul>
+                </div>
+
+                <div class="case-study__card">
+                    <h3 class="case-study__card-title">Deployment & DevOps</h3>
+                    <ul class="case-study__list">
+                        <li class="case-study__list-item">Replit for development environment</li>
+                        <li class="case-study__list-item">Replit Autoscale for production</li>
+                        <li class="case-study__list-item">Environment-based configuration</li>
+                        <li class="case-study__list-item">Automated deployments</li>
+                        <li class="case-study__list-item">Health monitoring</li>
+                        <li class="case-study__list-item">Backup strategies</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-study__section">
+            <h2 class="case-study__section-title">Key Features & Functionality</h2>
+            
+            <div class="case-study__content">
+                <p>The application focuses on core inventory management functionality, demonstrating essential CRUD operations and data relationships in a realistic business context.</p>
+            </div>
+            
+            <div class="case-study__grid">
+                <div class="case-study__card">
+                    <h3 class="case-study__card-title">Inventory Management</h3>
+                    <ul class="case-study__list">
+                        <li class="case-study__list-item">Product catalog with detailed information</li>
+                        <li class="case-study__list-item">Stock level tracking and updates</li>
+                        <li class="case-study__list-item">Category and location organization</li>
+                        <li class="case-study__list-item">Search and filtering functionality</li>
+                        <li class="case-study__list-item">Basic reporting and data export</li>
+                    </ul>
+                </div>
+
+                <div class="case-study__card">
+                    <h3 class="case-study__card-title">User Interface</h3>
+                    <ul class="case-study__list">
+                        <li class="case-study__list-item">Responsive design for all devices</li>
+                        <li class="case-study__list-item">Modern UI with shadcn/ui components</li>
+                        <li class="case-study__list-item">Form validation and error handling</li>
+                        <li class="case-study__list-item">Loading states and user feedback</li>
+                        <li class="case-study__list-item">Intuitive navigation and workflow</li>
+                    </ul>
+                </div>
+
+                <div class="case-study__card">
+                    <h3 class="case-study__card-title">Data Management</h3>
+                    <ul class="case-study__list">
+                        <li class="case-study__list-item">PostgreSQL database with proper relationships</li>
+                        <li class="case-study__list-item">Type-safe queries with Drizzle ORM</li>
+                        <li class="case-study__list-item">Data validation on frontend and backend</li>
+                        <li class="case-study__list-item">Error handling and data consistency</li>
+                        <li class="case-study__list-item">Efficient API design patterns</li>
+                    </ul>
+                </div>
+
+                <div class="case-study__card">
+                    <h3 class="case-study__card-title">Technical Implementation</h3>
+                    <ul class="case-study__list">
+                        <li class="case-study__list-item">Full TypeScript implementation</li>
+                        <li class="case-study__list-item">State management with Zustand</li>
+                        <li class="case-study__list-item">Server state with TanStack Query</li>
+                        <li class="case-study__list-item">Form handling with React Hook Form</li>
+                        <li class="case-study__list-item">Production deployment on Replit</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-study__section">
+            <h2 class="case-study__section-title">Technical Challenges & Solutions</h2>
+            
+            <div class="case-study__content">
+                <h3>Challenge 1: Mastering AI-Assisted Development</h3>
+                <p><strong>Problem:</strong> This was my first time using Replit Agent for a full-stack project. I needed to learn how to effectively communicate with the AI, understand its capabilities and limitations, and guide it to build something that actually worked for Nicolas's business needs.</p>
+                <p><strong>Solution:</strong> Spent time exploring and experimenting with Replit Agent's capabilities. It wasn't immediately successful - I had to learn the right way to prompt it, break down requirements, and iterate when the first attempts didn't work. Through trial and collaboration, the AI handled the React state management, API design, and database setup while I focused on understanding the business requirements and guiding the overall direction.</p>
+
+                <h3>Challenge 2: Understanding the Business Domain</h3>
+                <p><strong>Problem:</strong> I knew nothing about powder coating inventory management. Nicolas had specific workflows around weighing containers, tracking powder consumption, and managing different product types that I needed to translate into code.</p>
+                <p><strong>Solution:</strong> Spent significant time with Nicolas understanding his daily routine. Watched him weigh containers, saw his Excel sheets, and learned why certain data points mattered. This domain knowledge was crucial for building something he'd actually use.</p>
+
+                <h3>Challenge 3: AI-Assisted Development Learning Curve</h3>
+                <p><strong>Problem:</strong> While Replit Agent was powerful, I needed to learn how to effectively collaborate with AI - when to trust it, when to question it, and how to debug when things went wrong.</p>
+                <p><strong>Solution:</strong> Developed a workflow: start with clear requirements, break down complex features into smaller pieces, and always test incrementally. Learned to read and understand the generated code rather than just accepting it blindly.</p>
+
+                <h3>Challenge 4: Scope vs. Time Pressure</h3>
+                <p><strong>Problem:</strong> Nicolas needed this working quickly for his business, but I also wanted to learn modern development practices. Balancing "make it work" with "do it right" was challenging.</p>
+                <p><strong>Solution:</strong> Made pragmatic decisions: skipped authentication to focus on core functionality, used proven patterns (REST API, standard CRUD operations), and prioritized features Nicolas actually needed daily over "nice-to-have" additions.</p>
+            </div>
+        </section>
+
+        <div class="case-study__highlight">
+            <h3 class="case-study__highlight-title">Technical Achievement</h3>
+            <p>In just two weeks, through intensive collaboration with Nicolas, we went from initial requirements gathering to a fully functional web application. This rapid development cycle demonstrates the power of combining domain expertise with AI-assisted development tools and modern tech stack.</p>
+            
+            <p><strong>Timeline breakdown:</strong> Week 1 focused on understanding Nicolas's business needs and exploring technical possibilities. Week 2 concentrated on implementation, resulting in a working inventory management system deployed to production.</p>
+        </div>
+
+        <section class="case-study__section">
+            <h2 class="case-study__section-title">Development Process & Learnings</h2>
+            
+            <div class="case-study__content">
+                <h3>AI-Assisted Development Approach</h3>
+                <p>Developed the application using Replit as both IDE and hosting platform, leveraging Replit Agent for AI-assisted coding. This browser-based development environment allowed for rapid prototyping and immediate deployment testing.</p>
+
+                <h3>Domain Knowledge Collaboration</h3>
+                <p>Worked closely with Nicolas, owner of ML Coating, to understand the real-world requirements of coating industry inventory management. His expertise in coating processes, material handling, and business workflows was crucial for creating realistic data models and user flows.</p>
+
+                <h3>Key Technical Learnings</h3>
+                <ul class="case-study__list">
+                    <li class="case-study__list-item">AI-assisted development with Replit Agent</li>
+                    <li class="case-study__list-item">Browser-based development and deployment workflows</li>
+                    <li class="case-study__list-item">TypeScript integration across full stack</li>
+                    <li class="case-study__list-item">Modern React patterns with Zustand and TanStack Query</li>
+                    <li class="case-study__list-item">Database design informed by real business requirements</li>
+                    <li class="case-study__list-item">Translating domain expertise into technical implementation</li>
+                </ul>
+
+                <h3>Two-Week Sprint Methodology</h3>
+                <p><strong>Week 1 - Discovery & Planning:</strong> Intensive sessions with Nicolas to understand coating industry workflows, inventory challenges, and business requirements. Explored technical possibilities with Replit Agent and defined the minimum viable product scope.</p>
+                
+                <p><strong>Week 2 - Rapid Implementation:</strong> Leveraged AI-assisted development to quickly translate requirements into working code. Daily feedback sessions with Nicolas ensured the application matched real-world needs while maintaining development momentum.</p>
+                
+                <p>This compressed timeline proved that modern development tools, when combined with clear requirements and domain expertise, can deliver functional applications remarkably quickly.</p>
+            </div>
+        </section>
+
+        <section class="case-study__section">
+            <h2 class="case-study__section-title">Future Enhancements</h2>
+            
+            <div class="case-study__grid">
+                <div class="case-study__card">
+                    <h3 class="case-study__card-title">Technical Roadmap</h3>
+                    <ul class="case-study__list">
+                        <li class="case-study__list-item">Authentication system implementation</li>
+                        <li class="case-study__list-item">Migration to Supabase for RLS and auth</li>
+                        <li class="case-study__list-item">Multi-tenant architecture</li>
+                        <li class="case-study__list-item">Mobile app development</li>
+                        <li class="case-study__list-item">Advanced analytics dashboard</li>
+                        <li class="case-study__list-item">API integrations with suppliers</li>
+                    </ul>
+                </div>
+
+                <div class="case-study__card">
+                    <h3 class="case-study__card-title">Business Features</h3>
+                    <ul class="case-study__list">
+                        <li class="case-study__list-item">Multi-company support</li>
+                        <li class="case-study__list-item">Advanced reporting suite</li>
+                        <li class="case-study__list-item">Regulatory compliance automation</li>
+                        <li class="case-study__list-item">Customer portal integration</li>
+                        <li class="case-study__list-item">Financial system integration</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-study__section">
+            <h2 class="case-study__section-title">Conclusion</h2>
+            <div class="case-study__content">
+                <p>Stock2coat represents my exploration of modern development workflows, combining AI-assisted coding with real business domain knowledge. It demonstrates my ability to leverage cutting-edge tools like Replit Agent while collaborating with industry experts to create practical solutions.</p>
+                
+                <p>The project showcases both technical skills and collaborative problem-solving: working with AI development tools, translating business requirements into technical solutions, and building production-ready applications with modern web technologies. The collaboration with Nicolas provided invaluable insights into real-world business processes.</p>
+                
+                <p>This experience has been crucial in understanding how AI tools can accelerate development while highlighting the importance of domain expertise and human collaboration. It demonstrates my adaptability to new development paradigms and ability to bridge the gap between technical implementation and business needs.</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('.case-study__section, .case-study__card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html> 
