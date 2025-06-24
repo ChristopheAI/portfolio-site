@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Christophe's Frontend Developer Portfolio - B2B Enterprise Software Focus",
   "type": "module",
-  "homepage": "https://christophe-portfolio.netlify.app",
+  "homepage": "https://christopheai.github.io/portfolio-site",
   "repository": {
     "type": "git",
-    "url": "https://github.com/christophevh/portfolio-website.git"
+    "url": "https://github.com/ChristopheAI/portfolio-site.git"
   },
   "scripts": {
     "dev": "vite",

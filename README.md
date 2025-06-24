@@ -3,12 +3,12 @@
 > Frontend Developer Portfolio showcasing B2B enterprise software expertise
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/your-badge-id/deploy-status)](https://app.netlify.com/sites/christophe-portfolio/deploys)
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/christophevh/portfolio-website)
-[![Performance](https://img.shields.io/badge/lighthouse-100%2F100-brightgreen)](https://christophe-portfolio.netlify.app)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/ChristopheAI/portfolio-site)
+[![Performance](https://img.shields.io/badge/lighthouse-100%2F100-brightgreen)](https://christopheai.github.io/portfolio-site)
 
 ## 🚀 Live Demo
 
-**[View Portfolio →](https://christophe-portfolio.netlify.app)**
+**[View Portfolio →](https://christopheai.github.io/portfolio-site)**
 
 ## 📋 About
 
