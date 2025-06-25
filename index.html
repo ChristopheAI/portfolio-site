@@ -44,6 +44,7 @@
                 <ul class="nav__menu">
                     <li><a href="#home" class="nav__link">Home</a></li>
                     <li><a href="#projects" class="nav__link">Projects</a></li>
+                    <li><a href="#ai-workflow" class="nav__link">AI Workflow</a></li>
                     <li><a href="#about" class="nav__link">About</a></li>
                     <li><a href="#skills" class="nav__link">Skills</a></li>
                     <li><a href="#contact" class="nav__link">Contact</a></li>
@@ -75,16 +76,16 @@
                             <span class="hero__greeting">Hi, I'm</span>
                             <span class="hero__name">Christophe</span>
                         </h1>
-                        <p class="hero__subtitle">Enterprise-Savvy Frontend Developer</p>
+                        <p class="hero__subtitle">AI-Powered Frontend Developer</p>
                         <p class="hero__description">From infrastructure engineer to business developer to frontend. Stock2coat shows I can deliver real solutions.</p>
                         <div class="hero__actions">
-                            <a href="#projects" class="hero__cta hero__cta--primary">See Real Demos</a>
-                            <a href="#contact" class="hero__cta hero__cta--secondary">Start a Conversation</a>
+                            <a href="#projects" class="hero__cta hero__cta--primary">Bekijk Mijn Werk</a>
+                            <a href="#contact" class="hero__cta hero__cta--secondary">Laten We Praten</a>
                         </div>
                     </div>
                 </div>
                 <div class="hero__scroll-indicator">
-                    <span class="hero__scroll-text">Scroll to explore</span>
+                    <span class="hero__scroll-text">Scroll voor meer</span>
                     <div class="hero__scroll-arrow"></div>
                 </div>
             </div>
@@ -93,8 +94,8 @@
         <section id="projects" class="projects">
             <div class="container">
                 <div class="projects__header">
-                    <h2 class="projects__title">Featured Projects</h2>
-                    <p class="projects__subtitle">Real solutions built with modern technologies</p>
+                    <h2 class="projects__title">Mijn Projecten</h2>
+                    <p class="projects__subtitle">Dit heb ik gebouwd</p>
                 </div>
                 <div class="projects__grid">
                     <!-- Stock2coat Project -->
@@ -103,15 +104,16 @@
                             <span class="project-card__badge project-card__badge--live">✅ Live</span>
                         </div>
                         <div class="project-card__image">
-                            <video class="project-card__video" 
-                                   autoplay 
+                            <video class="project-card__video lazy-video" 
                                    muted 
                                    loop 
                                    playsinline 
                                    aria-label="Stock2coat demo video" 
-                                   poster="/src/assets/images/stock2coat-demo.gif" 
-                                   preload="none">
-                                <source src="/src/assets/images/stock2coat-demo.mp4" type="video/mp4">
+                                   poster="/src/assets/images/stock2coat-poster.jpg" 
+                                   preload="none"
+                                   data-src="/src/assets/images/stock2coat-demo.mp4">
+                                <source data-src="/src/assets/images/stock2coat-demo.webm" type="video/webm">
+                                <source data-src="/src/assets/images/stock2coat-demo.mp4" type="video/mp4">
                             </video>
                             <!-- Fallback for browsers that don't support video -->
                             <div class="video-fallback">Video not supported</div>
@@ -121,9 +123,9 @@
                         </div>
                         <div class="project-card__content">
                             <h3 class="project-card__title">Stock2coat</h3>
-                            <p class="project-card__subtitle">Inventory Forecasting Power</p>
+                            <p class="project-card__subtitle">Voorraad voorspellen voor ML Coating</p>
                             <p class="project-card__description">
-                                Significantly reduces powder-coating stockouts. React 18 + TypeScript frontend, Node.js API, PostgreSQL via Neon, all wrapped in a sleek shadcn/ui interface.
+                                Nicolas heeft nu 90% minder voorraadproblemen. Gebouwd met React, TypeScript en een PostgreSQL database.
                             </p>
                             <div class="project-card__tech">
                                 <span class="tech-badge tech-badge--react">React 18</span>
@@ -135,7 +137,7 @@
                             </div>
                             <div class="project-card__actions">
                                 <a href="/stock2coat-case-study.html" class="project-card__btn project-card__btn--primary">
-                                    View Case Study
+                                    Lees Het Verhaal
                                 </a>
                             </div>
                         </div>
@@ -152,14 +154,14 @@
                                  class="project-card__img"
                                  loading="lazy">
                             <div class="project-card__image-overlay">
-                                <span class="project-card__view-hint">You're looking at it!</span>
+                                <span class="project-card__view-hint">Je kijkt er nu naar!</span>
                             </div>
                         </div>
                         <div class="project-card__content">
                             <h3 class="project-card__title">Portfolio Website</h3>
-                            <p class="project-card__subtitle">Loads in under&nbsp;1&nbsp;second</p>
+                            <p class="project-card__subtitle">Laadt binnen 1 seconde</p>
                             <p class="project-card__description">
-                                You're browsing it now: vanilla JS, modern CSS, optimized for performance and fast loading.
+                                Je kijkt er nu naar. Simpel maar snel - precies wat een portfolio moet zijn.
                             </p>
                             <div class="project-card__tech">
                                 <span class="tech-badge tech-badge--vite">Vite</span>
@@ -169,14 +171,124 @@
                             </div>
                             <div class="project-card__actions">
                                 <a href="https://github.com/ChristopheAI/portfolio-site" class="project-card__btn project-card__btn--secondary" target="_blank" rel="noopener noreferrer">
-                                    View Source
+                                    Bekijk De Code
                                 </a>
                             </div>
                         </div>
                     </article>
                 </div>
                 <div class="projects__footer">
-                    <p>More projects available on <a href="https://github.com/ChristopheAI" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+                    <p>Meer projecten op mijn <a href="https://github.com/ChristopheAI" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="ai-workflow" class="ai-workflow">
+            <div class="container">
+                <div class="ai-workflow__content">
+                    <h2 class="ai-workflow__title">Hoe ik een web app bouwde die niet bestond</h2>
+                    <p class="ai-workflow__intro">Mijn vriend Nicolas runt ML Coating - een poederlakkerij. Hij had constant problemen met voorraad. Er bestond gewoon geen software die dit kon oplossen. Dus heb ik Stock2coat voor hem gebouwd. Het werkt zo goed dat we er nu mee doorgaan.</p>
+                    
+                    <div class="ai-workflow__projects">
+                        <div class="ai-workflow__project">
+                            <div class="ai-workflow__project-header">
+                                <h3>Stock2coat voor ML Coating</h3>
+                                <span class="ai-workflow__timeline">2 weken. Voor een echte vriend. Echt probleem opgelost.</span>
+                            </div>
+                            <div class="ai-workflow__steps">
+                                <div class="ai-workflow__step">
+                                    <div class="ai-workflow__step-icon">🧠</div>
+                                    <div class="ai-workflow__step-content">
+                                        <h4>ChatGPT: Het Probleem Uitleggen</h4>
+                                        <p>"Nicolas heeft een poederlakkerij. Hij weet nooit hoeveel poeder hij nodig heeft. Kan je me helpen een systeem te bedenken?" 30 minuten later had ik een volledig plan. Geen meetings, geen PowerPoints.</p>
+                                    </div>
+                                </div>
+                                <div class="ai-workflow__step">
+                                    <div class="ai-workflow__step-icon">⚡</div>
+                                    <div class="ai-workflow__step-content">
+                                        <h4>Replit: Gewoon Beginnen</h4>
+                                        <p>Geen gedoe met installaties. Gewoon een browser open, en beginnen bouwen. React, TypeScript, database - alles werkt direct. Terwijl andere developers nog bezig zijn met setup, heb ik al features.</p>
+                                    </div>
+                                </div>
+                                <div class="ai-workflow__step">
+                                    <div class="ai-workflow__step-icon">🎯</div>
+                                    <div class="ai-workflow__step-content">
+                                        <h4>Claude: De Code Verbeteren</h4>
+                                        <p>Mijn code was functioneel, maar niet perfect. Claude helpt me bugs vinden, security issues oplossen, en alles professioneel maken. Het is alsof ik een ervaren collega naast me heb zitten.</p>
+                                    </div>
+                                </div>
+                                <div class="ai-workflow__step">
+                                    <div class="ai-workflow__step-icon">🚀</div>
+                                    <div class="ai-workflow__step-content">
+                                        <h4>Replit: Direct Live</h4>
+                                        <p>Op deploy klikken en het werkt. Geen servers configureren, geen DevOps team nodig. Nicolas kon de app direct gebruiken. Echt software voor echte mensen.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ai-workflow__result">
+                                <strong>Het resultaat:</strong> Nicolas spaart nu 2 uur per dag uit. Zijn voorraadproblemen zijn 90% minder. Zijn bedrijf loopt soepeler. En wij gaan nu verder met Stock2coat omdat het zo goed werkt.
+                            </div>
+                            </div>
+                            
+                        <div class="ai-workflow__project">
+                            <div class="ai-workflow__project-header">
+                                <h3>Deze Website: Van Niks naar Wat Je Nu Ziet</h3>
+                                <span class="ai-workflow__timeline">1 dag. Je kijkt naar het resultaat.</span>
+                                        </div>
+                            <div class="ai-workflow__steps">
+                                <div class="ai-workflow__step">
+                                    <div class="ai-workflow__step-icon">📋</div>
+                                    <div class="ai-workflow__step-content">
+                                        <h4>ChatGPT: De Strategie</h4>
+                                        <p>"Ik heb een portfolio nodig die me een job oplevert." Eén gesprek later: complete content strategie, messaging, en technische architectuur. Geen dure consultants nodig.</p>
+                                    </div>
+                                        </div>
+                                <div class="ai-workflow__step">
+                                    <div class="ai-workflow__step-icon">💻</div>
+                                    <div class="ai-workflow__step-content">
+                                        <h4>Cursor: Code Die Zichzelf Schrijft</h4>
+                                        <p>Ik denk het, Cursor codeert het. Autocomplete die echt begrijpt wat ik wil. Refactoring die niks kapot maakt. Het is alsof ik een coding partner heb die nooit moe wordt.</p>
+                                    </div>
+                                        </div>
+                                <div class="ai-workflow__step">
+                                    <div class="ai-workflow__step-icon">📚</div>
+                                    <div class="ai-workflow__step-content">
+                                        <h4>MCP Tools: Het Geheime Wapen</h4>
+                                        <p>Context7 geeft me direct toegang tot alle documentatie. Best practices stromen rechtstreeks in mijn editor. Het is alsof ik de kennis van het hele internet in mijn vingertoppen heb.</p>
+                                    </div>
+                                        </div>
+                                <div class="ai-workflow__step">
+                                    <div class="ai-workflow__step-icon">🔄</div>
+                                    <div class="ai-workflow__step-content">
+                                        <h4>Claude: De Laatste Puntjes</h4>
+                                        <p>Elk woord geoptimaliseerd. Elke sectie verfijnd. Performance perfect afgesteld. Claude maakt van goed geweldig, en van geweldig "hoe heb je dit zo snel gebouwd?"</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ai-workflow__result">
+                                <strong>Je ervaart het resultaat:</strong> Laadt in minder dan 1 seconde. Werkt perfect op elk apparaat. Professioneel genoeg voor enterprise klanten. Gebouwd in 1 dag terwijl andere developers nog fonts aan het kiezen zijn.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="ai-workflow__advantage">
+                        <h3>Waarom Dit Werkt</h3>
+                        <p>Andere developers gebruiken ChatGPT als Google. Ze vechten met lokale omgevingen. Ze deployen alsof het 2015 is. Ik heb een systeem gebouwd dat me 10x sneller maakt. Dit is geen geluk. Dit is systematisch AI gebruiken.</p>
+                        <div class="ai-workflow__metrics">
+                            <div class="ai-workflow__metric">
+                                                                  <span class="metric-number">10x</span>
+                                  <span class="metric-label">Sneller ontwikkelen</span>
+                            </div>
+                            <div class="ai-workflow__metric">
+                                                                  <span class="metric-number">100%</span>
+                                  <span class="metric-label">Enterprise kwaliteit</span>
+                            </div>
+                            <div class="ai-workflow__metric">
+                                                                  <span class="metric-number">2 weken</span>
+                                  <span class="metric-label">Complexe app oplevering</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -184,29 +296,29 @@
         <section id="about" class="about">
             <div class="container">
                 <div class="about__content">
-                    <h2 class="about__title">My 17-Year Tech Journey</h2>
+                    <h2 class="about__title">Mijn 17-Jaar Tech Reis</h2>
                     <div class="about__grid">
                         <div class="about__text">
-                            <p>Seventeen years ago I was the unseen engineer keeping Cisco routers alive. Today I craft interfaces people actually enjoy using. Here's the fast version.</p>
+                            <p>Zeventien jaar geleden was ik lokale IT infrastructure support bij Cisco - hardware en software issues troubleshooten en oplossen. Vandaag ben ik een AI-powered frontend developer die interfaces bouwt waar mensen blij van worden. Dit is het korte verhaal.</p>
 
                             <ul class="about__timeline">
-                                <li><strong>Cisco EMEA (2008-2014)</strong> — seven years troubleshooting Fortune-500 networks.</li>
-                                <li><strong>Fixzit (2015-2019)</strong> — four years juggling multi-client projects and budgets.</li>
-                                <li><strong>acom NV (2019-2024)</strong> — five years deep in enterprise systems engineering.</li>
-                                <li><strong>CaptureTech (Mar-Jul 2024)</strong> — daily CRM pain sparked my UX obsession.</li>
-                                <li><strong>Elk Factory (Aug 2024-Jan 2025)</strong> — Elasticsearch showed me what great software feels like.</li>
-                                <li><strong>Relaxy (Feb-Apr 2025)</strong> — final push: I wanted to build, not just sell.</li>
-                                <li><strong>Frontend Developer (Apr 2025 – Now)</strong> — built Stock2coat in two weeks; 90 % fewer stockouts for a real business.</li>
+                                <li><strong>Cisco EMEA (2008-2014)</strong> — zeven jaar Fortune-500 netwerken troubleshooten.</li>
+                                <li><strong>Fixzit (2015-2019)</strong> — vier jaar multi-client projecten en budgets jongleren.</li>
+                                <li><strong>acom NV (2019-2024)</strong> — vijf jaar diep in enterprise systems engineering.</li>
+                                <li><strong>CaptureTech (Mar-Jul 2024)</strong> — dagelijkse CRM frustratie wekte mijn UX obsessie.</li>
+                                <li><strong>Elk Factory (Aug 2024-Jan 2025)</strong> — Elasticsearch liet me zien hoe goede software voelt.</li>
+                                <li><strong>Relaxy (Feb-Apr 2025)</strong> — finale push: ik wilde bouwen, niet alleen verkopen.</li>
+                                <li><strong>AI-Powered Frontend Developer (Apr 2025 – Nu)</strong> — Stock2coat gebouwd in twee weken; 90% minder voorraadproblemen voor een echt bedrijf.</li>
                             </ul>
 
-                            <p>Enterprise depth, project management discipline, UX empathy and measurable results: that's my mix.</p>
+                            <p>Enterprise ervaring, projectmanagement skills, UX begrip en meetbare resultaten: dat is mijn combinatie.</p>
                         </div>
                         
                         <div class="about__sidebar">
                             <div class="about__card about__card--highlight">
                                 <div class="about__card-header">
                                     <span class="about__card-icon">⚡</span>
-                                    <h4>The Stack That Powers Everything</h4>
+                                    <h4>De Tools Die Ik Gebruik</h4>
                                 </div>
                                 <div class="about__tech-grid">
                                     <span class="about__tech">JavaScript</span>
@@ -221,12 +333,12 @@
                             <div class="about__card">
                                 <div class="about__card-header">
                                     <span class="about__card-icon">🎖️</span>
-                                    <h4>Real Experience</h4>
+                                    <h4>Echte Ervaring</h4>
                                 </div>
                                 <ul>
-                                    <li><strong>Enterprise Infrastructure:</strong> 17 years</li>
-                                    <li><strong>Multi-client Management:</strong> 4 years</li>
-                                    <li><strong>UX Frustration:</strong> Lived it daily</li>
+                                    <li><strong>Enterprise Infrastructure:</strong> 17 jaar</li>
+                                    <li><strong>Multi-client Management:</strong> 4 jaar</li>
+                                    <li><strong>UX Frustratie:</strong> Dagelijks meegemaakt</li>
                                     <li><strong>Enterprise Software:</strong> Elasticsearch exposure</li>
                                 </ul>
                             </div>
@@ -234,22 +346,22 @@
                             <div class="about__card">
                                 <div class="about__card-header">
                                     <span class="about__card-icon">🧠</span>
-                                    <h4>What This Means for You</h4>
+                                    <h4>Wat Dit Voor Jou Betekent</h4>
                                 </div>
-                                <p>You're hiring someone who brings together:</p>
+                                <p>Je huurt iemand in die samenbrengt:</p>
                                 <ul>
-                                    <li>Enterprise complexity understanding</li>
-                                    <li>Business operations knowledge</li>
-                                    <li>Real UX pain point experience</li>
-                                    <li>Focus on practical solutions that work</li>
+                                    <li>Enterprise complexiteit begrip</li>
+                                    <li>Business operaties kennis</li>
+                                    <li>Echte UX pijnpunt ervaring</li>
+                                    <li>Focus op praktische oplossingen die werken</li>
                                 </ul>
-                                <p><strong>This combination offers unique value.</strong></p>
+                                <p><strong>Deze combinatie biedt unieke waarde.</strong></p>
                             </div>
                             
                             <div class="about__testimonial">
                                 <div class="about__testimonial-content">
-                                    <p>"Ready to build something extraordinary?"</p>
-                                    <cite>– The question that matters</cite>
+                                    <p>"Klaar om iets bijzonders te bouwen?"</p>
+                                    <cite>– De vraag die telt</cite>
                                 </div>
                             </div>
                         </div>
@@ -257,11 +369,11 @@
                     
                     <div class="about__cta">
                         <div class="about__cta-content">
-                            <h3>🚀 Ready to Build Something Extraordinary?</h3>
-                            <p>I don't just write code – I solve problems that matter. Let's turn your business challenge into a digital solution that actually works.</p>
+                            <h3>🚀 Klaar Om Iets Bijzonders Te Bouwen?</h3>
+                            <p>Ik schrijf niet alleen code - ik los echte problemen op. Laten we jouw business uitdaging omzetten in een digitale oplossing die echt werkt.</p>
                             <div class="about__cta-buttons">
-                                <a href="#contact" class="about__btn about__btn--primary">Start a Conversation</a>
-                                <a href="/stock2coat-case-study.html" class="about__btn about__btn--secondary">See My Work</a>
+                                <a href="#contact" class="about__btn about__btn--primary">Laten We Praten</a>
+                                <a href="/stock2coat-case-study.html" class="about__btn about__btn--secondary">Bekijk Mijn Werk</a>
                             </div>
                         </div>
                     </div>
@@ -272,14 +384,14 @@
         <section id="work-history" class="work-history">
             <div class="container">
                 <div class="work-history__content">
-                    <h2 class="work-history__title">Work History</h2>
-                    <p class="work-history__intro">The journey from infrastructure to interfaces:</p>
+                    <h2 class="work-history__title">Werk Geschiedenis</h2>
+                    <p class="work-history__intro">De reis van infrastructure naar interfaces:</p>
                     
                     <div class="work-history__timeline">
                         <div class="work-history__item work-history__item--current">
                             <div class="work-history__period">April 2025 - Present</div>
                             <div class="work-history__details">
-                                <h3>Frontend Developer</h3>
+                                <h3>AI-Powered Frontend Developer</h3>
                                 <p class="work-history__company">Open to Work - Career Transition</p>
                                 <p class="work-history__description">Making the switch from Business Development to Frontend Development. Building projects like Stock2coat to demonstrate technical skills and passion for creating solutions people love.</p>
                                 <div class="work-history__achievements">
@@ -376,8 +488,8 @@
                     </div>
                     
                     <div class="work-history__transition">
-                        <h3>🔄 The Plot Twist</h3>
-                        <p>Here's the thing: after years in business development, I realized I was selling other people's solutions when I wanted to build my own. Stock2coat started as a side project but became my "aha moment" - this is what I want to do full time. From Cisco technical foundation to business understanding to frontend passion, I'm ready to create solutions that actually work.</p>
+                        <h3>🔄 De Plot Twist</h3>
+                        <p>Hier is het ding: na jaren in business development realiseerde ik me dat ik andermans oplossingen verkocht terwijl ik mijn eigen wilde bouwen. Stock2coat begon als een side project maar werd mijn "aha moment" - dit is wat ik fulltime wil doen. Van Cisco technische basis naar business begrip naar frontend passie, ik ben klaar om oplossingen te creëren die echt werken.</p>
                     </div>
                 </div>
             </div>
@@ -386,16 +498,16 @@
         <section id="multi-project" class="multi-project">
             <div class="container">
                 <div class="multi-project__content">
-                    <h2 class="multi-project__title">What Makes My Background Different for B2B Companies</h2>
-                    <p class="multi-project__intro">Five traits B2B teams value most in my work.</p>
+                    <h2 class="multi-project__title">Wat Mijn Achtergrond Anders Maakt Voor B2B Bedrijven</h2>
+                    <p class="multi-project__intro">Vijf eigenschappen die B2B teams waarderen in mijn werk.</p>
                     
                     <div class="multi-project__grid">
                         <div class="multi-project__card">
                             <div class="multi-project__icon">🔧</div>
-                            <h3>Deep Enterprise Systems Experience</h3>
-                            <p>12+ years keeping Fortune-500 systems online at Cisco & acom. I know real enterprise scale.</p>
+                            <h3>Diepe Enterprise Systems Ervaring</h3>
+                            <p>12+ jaar Fortune-500 systemen online houden bij Cisco & acom. Ik ken echte enterprise schaal.</p>
                             <div class="multi-project__metric">
-                                <span class="metric-number">17 Years</span>
+                                <span class="metric-number">17 Jaar</span>
                                 <span class="metric-label">Enterprise infrastructure</span>
                             </div>
                         </div>
@@ -403,27 +515,27 @@
                         <div class="multi-project__card">
                             <div class="multi-project__icon">🏢</div>
                             <h3>Multi-Client Project Management</h3>
-                            <p>Led four simultaneous client projects at Fixzit—deadlines, budgets, comms.</p>
+                            <p>Vier gelijktijdige client projecten geleid bij Fixzit—deadlines, budgets, communicatie.</p>
                             <div class="multi-project__metric">
-                                <span class="metric-number">4 Years</span>
+                                <span class="metric-number">4 Jaar</span>
                                 <span class="metric-label">Multi-client management</span>
                             </div>
                         </div>
                         
                         <div class="multi-project__card">
                             <div class="multi-project__icon">😤</div>
-                            <h3>User Experience Perspective</h3>
-                            <p>Five months in a clunky CRM taught me exactly what bad UX costs.</p>
+                            <h3>User Experience Perspectief</h3>
+                            <p>Vijf maanden in een klunzig CRM leerde me precies wat slechte UX kost.</p>
                             <div class="multi-project__metric">
-                                <span class="metric-number">Daily</span>
-                                <span class="metric-label">UX insights gained</span>
+                                <span class="metric-number">Dagelijks</span>
+                                <span class="metric-label">UX inzichten opgedaan</span>
                             </div>
                         </div>
                         
                         <div class="multi-project__card">
                             <div class="multi-project__icon">🔍</div>
-                            <h3>Enterprise Software Quality Standards</h3>
-                            <p>Elk Factory exposed me to Elasticsearch—my benchmark for quality enterprise software.</p>
+                            <h3>Enterprise Software Kwaliteit Standaarden</h3>
+                            <p>Elk Factory stelde me bloot aan Elasticsearch—mijn benchmark voor kwaliteit enterprise software.</p>
                             <div class="multi-project__metric">
                                 <span class="metric-number">Elite</span>
                                 <span class="metric-label">Enterprise software exposure</span>
@@ -432,23 +544,23 @@
                         
                         <div class="multi-project__card">
                             <div class="multi-project__icon">🚀</div>
-                            <h3>Real Business Impact Focus</h3>
-                            <p>Built Stock2coat in two weeks; 2 h saved daily, 90 % fewer stockouts.</p>
+                            <h3>Echte Business Impact Focus</h3>
+                            <p>Stock2coat gebouwd in twee weken; 2 uur per dag bespaard, 90% minder voorraadproblemen.</p>
                             <div class="multi-project__metric">
-                                <span class="metric-number">Proven</span>
+                                <span class="metric-number">Bewezen</span>
                                 <span class="metric-label">Business impact</span>
                             </div>
                         </div>
                     </div>
                     
                     <div class="multi-project__conclusion">
-                        <h3>The Takeaway</h3>
-                        <p>Enterprise know-how + multi-project delivery + user empathy = measurable impact. Ready to build?</p>
+                        <h3>De Conclusie</h3>
+                        <p>Enterprise know-how + multi-project oplevering + gebruiker empathie = meetbare impact. Klaar om te bouwen?</p>
                     </div>
                     
                     <div class="multi-project__tech">
-                        <h3>Technology Stack for Enterprise</h3>
-                        <p>Focused on proven technologies that work in business environments:</p>
+                        <h3>Technologie Stack Voor Enterprise</h3>
+                        <p>Gefocust op bewezen technologieën die werken in business omgevingen:</p>
                         <div class="multi-project__tech-grid">
                             <span class="tech-badge tech-badge--javascript">JavaScript</span>
                             <span class="tech-badge tech-badge--react">React</span>
@@ -464,9 +576,9 @@
 
         <section id="skills" class="skills">
             <div class="container">
-                <h2>What I Work With</h2>
+                <h2>Waarmee Ik Werk</h2>
                 <div class="skills__content">
-                    <p class="skills__intro">The tools that help me turn ideas into reality:</p>
+                    <p class="skills__intro">De tools die me helpen ideeën om te zetten in realiteit:</p>
                     
                     <div class="skills__grid">
                         <div class="skills__category">
@@ -506,20 +618,20 @@
 
         <section id="contact" class="contact">
             <div class="container">
-                <h2 class="contact__title">Ready to Build Together?</h2>
+                <h2 class="contact__title">Klaar Om Samen Te Bouwen?</h2>
                 <div class="contact__content">
-                    <p class="contact__intro">Looking for a Frontend Developer who combines technical skills with business understanding? I'm open to work and ready to build solutions that matter.</p>
+                    <p class="contact__intro">Op zoek naar een Frontend Developer die technische skills combineert met business begrip? Ik ben open voor werk en klaar om oplossingen te bouwen die ertoe doen.</p>
                     
                     <div class="contact__options">
                         <div class="contact__option">
-                            <h3>💬 Quick Chat</h3>
-                            <p>Let's talk about your project. No sales pitch, just a friendly conversation about what you're building.</p>
-                            <a href="mailto:hello@christophevh.dev?subject=Project Discussion - Let's Connect" class="contact__btn">Send an Email</a>
+                            <h3>💬 Snel Gesprek</h3>
+                            <p>Laten we praten over jouw project. Geen sales pitch, gewoon een vriendelijk gesprek over wat je aan het bouwen bent.</p>
+                            <a href="mailto:hello@christophevh.dev?subject=Project Discussion - Let's Connect" class="contact__btn">Stuur Een Email</a>
                         </div>
                         
                         <div class="contact__option">
-                            <h3>🔗 Connect</h3>
-                            <p>Follow along with my latest projects and AI-powered development experiments.</p>
+                            <h3>🔗 Verbinden</h3>
+                            <p>Volg mijn laatste projecten en AI-powered development experimenten.</p>
                             <div class="contact__social">
                                 <a href="https://github.com/ChristopheAI" target="_blank" rel="noopener noreferrer" class="contact__link">GitHub</a>
                                 <a href="https://linkedin.com/in/christophevanhoof" class="contact__social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
@@ -527,7 +639,7 @@
                         </div>
                     </div>
                     
-                    <p class="contact__note">Usually respond within 24 hours. Looking forward to hearing from you!</p>
+                    <p class="contact__note">Reageer meestal binnen 24 uur. Kijk ernaar uit om van je te horen!</p>
                 </div>
             </div>
         </section>
@@ -535,7 +647,7 @@
 
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2025 Christophe. Built with passion and vanilla JS.</p>
+            <p>&copy; 2025 Christophe. Gebouwd met passie en vanilla JS.</p>
         </div>
     </footer>
 
