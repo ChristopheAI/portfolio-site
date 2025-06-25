@@ -143,10 +143,10 @@ npx playwright test tests/performance.spec.js
 
 ## 🔗 Links
 
-- **Live Site**: [christophe-portfolio.netlify.app](https://christophe-portfolio.netlify.app)
+- **Live Site**: [christophevh.dev](https://christophevh.dev)
 - **LinkedIn**: [linkedin.com/in/christophevanhoof](https://linkedin.com/in/christophevanhoof)
 - **Email**: [vhchristophe@gmail.com](mailto:vhchristophe@gmail.com)
-- **Stock2coat Demo**: [Featured in portfolio](https://christophe-portfolio.netlify.app/#projects)
+- **Stock2coat Demo**: [Featured in portfolio](https://christophevh.dev/#projects)
 
 ## 📄 License
 

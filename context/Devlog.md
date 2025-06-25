@@ -656,3 +656,36 @@ test('hero section accessibility', async ({ page }) => {
 ---
 
 *Last Updated: 2024-12-19 20:45* 
+
+### 2025-04-XX | TASK-008: B2B Section Trimmed
+
+**What Done**: Shortened text in #multi-project section of `index.html`.
+
+**Why**: Meet new clarity & brevity standards (≤ 300 words) and pass QA tests.
+
+**Key Changes**:
+- Intro condensed to single sentence.
+- Each card reduced to one concise statement.
+- Replaced long conclusion bullet list with single takeaway line.
+
+**Outcome**: Section now ~180 words; bullet count per card ≤ 0 (passes limit). Ready for QA tests. 
+
+### 2025-04-XX | TASK-009: About Section Refined
+
+**What Done**: Replaced verbose About section with concise timeline; updated heading to "My 17-Year Tech Journey".
+
+**Reason**: Satisfy QA tests for heading ≤7 words and body ≤400 words.
+
+**Outcome**: New body ~220 words, heading 4 words. Should pass tests. 
+
+### 2025-04-XX | TASK-010: Projects Section Enhanced
+
+**What Done**: Fixed GitHub repository links and improved contact email functionality.
+
+**Key Changes**:
+- Updated portfolio GitHub link: `christophevh/portfolio-website` → `ChristopheAI/portfolio-site`
+- Updated main GitHub profile link: `christophevh` → `ChristopheAI`  
+- Enhanced email link with professional subject line: "Project Discussion - Let's Connect"
+- Verified existing hover effects on project cards are working (CSS already had excellent animations)
+
+**Outcome**: All external links now point to correct repositories, email opens with professional subject, hover effects functional. 

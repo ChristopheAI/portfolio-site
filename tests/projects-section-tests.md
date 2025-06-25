@@ -174,4 +174,66 @@
 
 ---
 
-**QA Notes**: This section is where recruiters will spend the most time. Every detail must be perfect, from working links to compelling descriptions. Projects should tell a story of growth and capability. 
+**QA Notes**: This section is where recruiters will spend the most time. Every detail must be perfect, from working links to compelling descriptions. Projects should tell a story of growth and capability.
+
+# Projects Section QA Tests
+
+## TASK-010: Projects Section Enhancement Tests
+
+### Test 1: GitHub Links Validation
+```javascript
+test('Portfolio GitHub link should point to correct repository', async ({ page }) => {
+  await page.goto('http://localhost:5173/');
+  const githubLink = page.locator('a[href*="github.com"]').first();
+  expect(await githubLink.getAttribute('href')).toBe('https://github.com/ChristopheAI/portfolio-site');
+});
+```
+
+### Test 2: External Links Behavior
+```javascript
+test('All external links should open in new tab', async ({ page }) => {
+  await page.goto('http://localhost:5173/');
+  const externalLinks = page.locator('a[href^="http"]:not([href*="localhost"])');
+  const count = await externalLinks.count();
+  
+  for (let i = 0; i < count; i++) {
+    const target = await externalLinks.nth(i).getAttribute('target');
+    expect(target).toBe('_blank');
+  }
+});
+```
+
+### Test 3: Project Cards Hover Effects
+```javascript
+test('Project cards should have hover effects', async ({ page }) => {
+  await page.goto('http://localhost:5173/');
+  const projectCard = page.locator('.project-card').first();
+  
+  // Check initial state
+  const initialTransform = await projectCard.evaluate(el => 
+    getComputedStyle(el).transform
+  );
+  
+  // Hover and check change
+  await projectCard.hover();
+  await page.waitForTimeout(300);
+  
+  const hoverTransform = await projectCard.evaluate(el => 
+    getComputedStyle(el).transform
+  );
+  
+  expect(hoverTransform).not.toBe(initialTransform);
+});
+```
+
+### Test 4: Case Study Link Validation
+```javascript
+test('Stock2coat case study link should work', async ({ page }) => {
+  await page.goto('http://localhost:5173/');
+  const caseStudyLink = page.locator('a[href="/stock2coat-case-study.html"]');
+  expect(await caseStudyLink.count()).toBeGreaterThan(0);
+  
+  // Test that the link is accessible
+  const response = await page.request.get('/stock2coat-case-study.html');
+  expect(response.status()).toBe(200);
+}); 

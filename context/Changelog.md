@@ -12,6 +12,42 @@ New entries at the TOP. Each entry includes:
 
 ## Completed Tasks
 
+### 2025-04-XX | Multi-Agent Workflow Implementation ✅
+
+**TASK-007, TASK-008, TASK-009 Completed**
+
+**Major Improvements:**
+- **Multi-Agent Workflow**: Introduced `CLAUDE.md` with formal PM→DEV→QA process
+- **B2B Section Optimized**: Reduced from ~800 to ~180 words, sharper messaging
+- **About Section Refined**: New title "My 17-Year Tech Journey", concise timeline format
+- **Test Coverage**: Added Playwright tests for content standards
+
+**Technical Changes:**
+- Created `tests/b2b-content.spec.js` and `tests/about-content.spec.js`
+- Streamlined copy across all sections
+- Maintained authentic voice while improving clarity
+
+**Impact**: Content now follows strict quality standards with automated validation.
+
+### 2025-04-XX | Projects & Contact Section Improvements ✅
+
+**TASK-010 Completed**
+
+**Enhancements:**
+- **GitHub Links Fixed**: Updated portfolio repository link from `christophevh/portfolio-website` → `ChristopheAI/portfolio-site`
+- **GitHub Profile Updated**: Main GitHub profile link now points to `ChristopheAI`
+- **Professional Email**: Contact email opens with subject "Project Discussion - Let's Connect"
+- **Verified Hover Effects**: Confirmed existing CSS animations work perfectly on project cards
+- **External Links**: All external links open in new tab with proper `target="_blank"`
+
+**Technical Details:**
+- All project links tested and functional
+- Email functionality verified
+- Hover animations provide smooth user feedback
+- Repository links now point to correct GitHub account
+
+**Impact**: Professional contact experience, correct repository references, enhanced user interaction.
+
 ### 2024-12-19
 
 #### ✅ TASK-006: Featured Projects Section

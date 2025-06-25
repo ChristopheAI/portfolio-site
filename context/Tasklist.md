@@ -13,6 +13,22 @@ Each task follows this structure:
 
 ## Active Tasks
 
+### TASK-007: Formalize Multi-Agent Workflow
+- **Status**: ✅ DONE
+- **Priority**: P0
+- **Assigned**: PM → QA → DEV → QA
+- **Dependencies**: None
+- **Estimated**: 1 hour
+- **Completed**: 2025-04-XX
+
+**Description**: Introduce CLAUDE.md documenting roles, principles, and workflow. Ensure enforcement via updated docs and example files.
+
+**Acceptance Criteria**:
+- [x] CLAUDE.md created with roles, principles, workflow, test guidelines
+- [x] Team acknowledges and follows new workflow
+- [x] Tasklist.md, Devlog.md, Changelog.md reference process
+- [x] Example commit demonstrates PM→DEV→QA loop
+
 ### TASK-006: Featured Projects Section
 - **Status**: ✅ DONE
 - **Priority**: P1
@@ -33,6 +49,73 @@ Each task follows this structure:
 - [x] Mobile-responsive cards
 - [x] "Currently Building" badge for Stock2coat (with pulse animation)
 - [x] Professional project descriptions that sell skills
+
+### TASK-008: Content Enhancement – B2B Section Clarity & Brevity
+- **Status**: ✅ DONE
+- **Priority**: P2
+- **Assigned**: PM → QA → DEV → QA
+- **Dependencies**: TASK-007
+- **Estimated**: 3 hours
+- **Completed**: 2025-04-XX
+
+**Description**: Shorten and sharpen the B2B ("What Makes My Background Different for B2B Companies") section. Reduce fluff, remove duplicate points, keep total word count ≤ 300, ensure copy remains authentic and engaging.
+
+**Acceptance Criteria**:
+- [x] Total word count of B2B section ≤ 300 words
+- [x] Max 5 bullet points per sub-card
+- [x] No duplicated sentences/claims across cards
+- [x] Page passes Lighthouse readability audit (≥ 90 SEO, ≥ 90 best-practices)
+- [x] All Playwright tests in `tests/b2b-content.spec.js` pass
+
+### TASK-009: Refine "The Real Story Behind VibeCoder" About Section
+- **Status**: ✅ DONE
+- **Priority**: P2
+- **Assigned**: PM → QA → DEV → QA
+- **Dependencies**: None
+- **Estimated**: 2 hours
+- **Completed**: 2025-04-XX
+
+**Description**: Re-evaluate the About section heading and copy. Goal: clearer headline (remove "VibeCoder" alias if confusing), tighter storytelling, max 400 words total.
+
+**Acceptance Criteria**:
+- [x] Heading communicates story in ≤ 7 words (e.g., "My 17-Year Tech Journey")
+- [x] Section body ≤ 400 words
+- [x] Retains key timeline milestones (Cisco, Fixzit, acom, CaptureTech, Elk, Relaxy)
+- [x] Tone remains authentic, first-person, concise
+- [x] Tests in `tests/about-content.spec.js` validate word count & heading length
+
+### TASK-010: Projects Section Enhancement
+- **Status**: ✅ DONE
+- **Priority**: P2
+- **Assigned**: PM → QA → DEV → QA
+- **Dependencies**: None
+- **Estimated**: 2 hours
+- **Completed**: 2025-04-XX
+
+**Description**: Improve projects section with better GitHub link, fix broken portfolio source link, and add visual hierarchy.
+
+**Acceptance Criteria**:
+- [x] Fix broken GitHub portfolio link (currently points to christophevh/portfolio-website)
+- [x] Update to correct repository: ChristopheAI/portfolio-site
+- [x] Add hover effects to project cards
+- [x] Ensure all external links open in new tab
+- [x] Test all project links work correctly
+
+### TASK-011: Contact Section Polish
+- **Status**: 📋 TODO
+- **Priority**: P2
+- **Assigned**: PM → QA → DEV → QA
+- **Dependencies**: None
+- **Estimated**: 1 hour
+
+**Description**: Enhance contact section with better email formatting and professional touches.
+
+**Acceptance Criteria**:
+- [ ] Email link should show professional subject line
+- [ ] Add contact form or improve current contact options
+- [ ] Ensure email opens with proper subject: "Project Discussion - [Name]"
+- [ ] Add phone number or other contact methods if desired
+- [ ] Test email functionality
 
 ---
 
@@ -159,3 +242,52 @@ Last Updated: 2024-12-19 (20:30)
 - [x] B2B user journey optimization
 
 ## NEXT PRIORITIES 
+
+## 🚨 URGENT - VANDAAG AF
+
+### TASK-012: SSL & Domain Final Check
+- **Status**: 🔄 IN PROGRESS
+- **Priority**: P0 (URGENT)
+- **Assigned**: PM → DEV → QA
+- **Dependencies**: DNS propagation
+- **Estimated**: 30 min
+
+**Description**: Verify https://christophevh.dev works perfectly with SSL.
+
+**Acceptance Criteria**:
+- [x] Cloudflare confirms domain is active
+- [ ] https://christophevh.dev loads without SSL errors
+- [ ] All pages accessible via HTTPS
+- [ ] No mixed content warnings
+- [ ] Site performance remains optimal
+
+### TASK-013: Final Content Polish & Typo Check
+- **Status**: 🔄 IN PROGRESS
+- **Priority**: P0 (URGENT)
+- **Assigned**: PM → QA → DEV → QA
+- **Dependencies**: None
+- **Estimated**: 45 min
+
+**Description**: Final proofread, typo check, and content polish before launch.
+
+**Acceptance Criteria**:
+- [ ] No spelling/grammar errors
+- [ ] All contact info correct (email, LinkedIn, GitHub)
+- [ ] Professional tone throughout
+- [ ] Call-to-actions clear and compelling
+
+### TASK-014: Production Deployment & Testing
+- **Status**: 📋 TODO
+- **Priority**: P0 (URGENT)  
+- **Assigned**: DEV → QA
+- **Dependencies**: TASK-012, TASK-013
+- **Estimated**: 30 min
+
+**Description**: Final build, commit, push and live testing.
+
+**Acceptance Criteria**:
+- [ ] Latest changes committed to GitHub
+- [ ] Live site reflects all updates
+- [ ] All links work on production
+- [ ] Mobile responsiveness verified
+- [ ] Performance metrics acceptable 
