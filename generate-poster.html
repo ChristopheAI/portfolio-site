@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock2coat Poster Generator</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: #f8f9fa;
+        }
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2563eb;
+            margin-bottom: 1rem;
+        }
+        .video-container {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        video {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .controls {
+            margin: 1rem 0;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        button:hover {
+            background: #1d4ed8;
+        }
+        button:disabled {
+            background: #9ca3af;
+            cursor: not-allowed;
+        }
+        .time-input {
+            padding: 0.5rem;
+            border: 1px solid #d1d5db;
+            border-radius: 4px;
+            width: 100px;
+        }
+        canvas {
+            margin: 1rem 0;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            max-width: 100%;
+        }
+        .download-link {
+            display: inline-block;
+            background: #059669;
+            color: white;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            margin: 1rem 0;
+        }
+        .download-link:hover {
+            background: #047857;
+        }
+        .instructions {
+            background: #f3f4f6;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        .instructions ol {
+            margin: 0;
+            padding-left: 1.5rem;
+        }
+        .instructions li {
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎬 Stock2coat Poster Generator</h1>
+        
+        <div class="instructions">
+            <h3>Instructions:</h3>
+            <ol>
+                <li>The video should load automatically from src/assets/images/stock2coat-demo.mp4</li>
+                <li>Adjust the time (in seconds) where you want to capture the frame</li>
+                <li>Click "Generate Poster" to create the image</li>
+                <li>Right-click the generated image and "Save as" → stock2coat-poster.jpg</li>
+                <li>Save it to src/assets/images/ folder</li>
+            </ol>
+        </div>
+
+        <div class="video-container">
+            <video id="videoElement" controls>
+                <source src="src/assets/images/stock2coat-demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="controls">
+            <label>
+                Time (seconds): 
+                <input type="number" id="timeInput" class="time-input" value="2" min="0" step="0.1">
+            </label>
+            <button id="generateBtn">Generate Poster</button>
+            <button id="seekBtn">Seek to Time</button>
+        </div>
+
+        <canvas id="canvas" style="display: none;"></canvas>
+        
+        <div id="result"></div>
+    </div>
+
+    <script>
+        const video = document.getElementById('videoElement');
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        const timeInput = document.getElementById('timeInput');
+        const generateBtn = document.getElementById('generateBtn');
+        const seekBtn = document.getElementById('seekBtn');
+        const result = document.getElementById('result');
+
+        // Set canvas size when video loads
+        video.addEventListener('loadedmetadata', () => {
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            console.log(`Video loaded: ${video.videoWidth}x${video.videoHeight}`);
+        });
+
+        // Seek to specified time
+        seekBtn.addEventListener('click', () => {
+            const time = parseFloat(timeInput.value);
+            video.currentTime = time;
+        });
+
+        // Generate poster from current frame
+        generateBtn.addEventListener('click', () => {
+            if (video.videoWidth === 0) {
+                alert('Video not loaded yet. Please wait for the video to load.');
+                return;
+            }
+
+            const time = parseFloat(timeInput.value);
+            
+            // Seek to the specified time
+            video.currentTime = time;
+            
+            // Wait a bit for the seek to complete
+            setTimeout(() => {
+                // Draw current video frame to canvas
+                ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+                
+                // Convert canvas to image
+                const dataURL = canvas.toDataURL('image/jpeg', 0.9);
+                
+                // Create download link
+                const img = document.createElement('img');
+                img.src = dataURL;
+                img.style.maxWidth = '100%';
+                img.style.border = '1px solid #d1d5db';
+                img.style.borderRadius = '8px';
+                
+                const downloadLink = document.createElement('a');
+                downloadLink.href = dataURL;
+                downloadLink.download = 'stock2coat-poster.jpg';
+                downloadLink.className = 'download-link';
+                downloadLink.textContent = '💾 Download Poster Image';
+                
+                result.innerHTML = '<h3>Generated Poster:</h3>';
+                result.appendChild(img);
+                result.appendChild(document.createElement('br'));
+                result.appendChild(downloadLink);
+                
+                console.log('Poster generated successfully');
+            }, 100);
+        });
+
+        // Update time input when user seeks manually
+        video.addEventListener('timeupdate', () => {
+            // Only update if user is not typing
+            if (document.activeElement !== timeInput) {
+                timeInput.value = video.currentTime.toFixed(1);
+            }
+        });
+    </script>
+</body>
+</html> 
