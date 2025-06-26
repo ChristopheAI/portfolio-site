@@ -623,10 +623,31 @@
                     <p class="contact__intro">Op zoek naar een Frontend Developer die technische skills combineert met business begrip? Ik ben open voor werk en klaar om oplossingen te bouwen die ertoe doen.</p>
                     
                     <div class="contact__options">
-                        <div class="contact__option">
-                            <h3>💬 Snel Gesprek</h3>
-                            <p>Laten we praten over jouw project. Geen sales pitch, gewoon een vriendelijk gesprek over wat je aan het bouwen bent.</p>
-                            <a href="mailto:hello@christophevh.dev?subject=Project Discussion - Let's Connect" class="contact__btn">Stuur Een Email</a>
+                        <div class="contact__form-wrapper">
+                            <h3>💬 Stuur Een Bericht</h3>
+                            <form action="https://formspree.io/f/mgvypqwa" method="POST" class="contact__form">
+                                <div class="form__group">
+                                    <label for="name" class="form__label">Naam</label>
+                                    <input type="text" id="name" name="name" class="form__input" required placeholder="Jouw naam">
+                                </div>
+                                
+                                <div class="form__group">
+                                    <label for="email" class="form__label">Email</label>
+                                    <input type="email" id="email" name="email" class="form__input" required placeholder="jouw@email.com">
+                                </div>
+                                
+                                <div class="form__group">
+                                    <label for="subject" class="form__label">Onderwerp</label>
+                                    <input type="text" id="subject" name="subject" class="form__input" required placeholder="Waarover wil je praten?">
+                                </div>
+                                
+                                <div class="form__group">
+                                    <label for="message" class="form__label">Bericht</label>
+                                    <textarea id="message" name="message" class="form__textarea" rows="5" required placeholder="Vertel me over jouw project..."></textarea>
+                                </div>
+                                
+                                <button type="submit" class="form__submit">Verstuur Bericht</button>
+                            </form>
                         </div>
                         
                         <div class="contact__option">
@@ -635,6 +656,12 @@
                             <div class="contact__social">
                                 <a href="https://github.com/ChristopheAI" target="_blank" rel="noopener noreferrer" class="contact__link">GitHub</a>
                                 <a href="https://linkedin.com/in/christophevanhoof" class="contact__social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                            </div>
+                            
+                            <div class="contact__direct">
+                                <h3>📧 Direct Contact</h3>
+                                <p>Liever direct mailen?</p>
+                                <a href="mailto:hello@christophevh.dev" class="contact__email">hello@christophevh.dev</a>
                             </div>
                         </div>
                     </div>

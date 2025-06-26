@@ -1288,6 +1288,198 @@ section {
 
 .contact__options {
     display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--space-xl);
+    align-items: start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact__form-wrapper {
+    background: var(--color-bg);
+    padding: var(--space-xl);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.contact__form-wrapper h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: var(--space-lg);
+    color: var(--color-text);
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.form__label {
+    font-weight: 500;
+    color: var(--color-text);
+    font-size: 0.875rem;
+}
+
+.form__input,
+.form__textarea {
+    padding: var(--space-md);
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all var(--transition-base);
+    background: var(--color-bg);
+}
+
+.form__input:focus,
+.form__textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+}
+
+.form__textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form__submit {
+    padding: var(--space-md) var(--space-xl);
+    background: linear-gradient(135deg, var(--color-accent), #0052a3);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    align-self: flex-start;
+}
+
+.form__submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 102, 204, 0.3);
+}
+
+.form__submit:active {
+    transform: translateY(0);
+}
+
+.contact__option {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.contact__option h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+    color: var(--color-text);
+}
+
+.contact__option p {
+    color: var(--color-text-light);
+    margin-bottom: var(--space-md);
+}
+
+.contact__social {
+    display: flex;
+    gap: var(--space-md);
+}
+
+.contact__link,
+.contact__social-link {
+    display: inline-flex;
+    align-items: center;
+    padding: var(--space-sm) var(--space-md);
+    background: var(--color-bg);
+    border: 2px solid var(--color-accent);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all var(--transition-base);
+}
+
+.contact__link:hover,
+.contact__social-link:hover {
+    background: var(--color-accent);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.contact__direct {
+    background: linear-gradient(135deg, #f8f9ff, #e8f4ff);
+    padding: var(--space-lg);
+    border-radius: 12px;
+    border: 1px solid #e1e8ff;
+}
+
+.contact__email {
+    display: inline-block;
+    color: var(--color-accent);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all var(--transition-base);
+}
+
+.contact__email:hover {
+    text-decoration: underline;
+}
+
+.contact__note {
+    margin-top: var(--space-xl);
+    font-style: italic;
+    color: var(--color-text-light);
+}
+
+.contact__btn {
+    display: inline-block;
+    padding: var(--space-md) var(--space-xl);
+    background: linear-gradient(135deg, var(--color-accent), #0052a3);
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all var(--transition-base);
+}
+
+.contact__btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0, 102, 204, 0.4);
+}
+
+@media (max-width: 768px) {
+    .contact__options {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+    
+    .contact__form-wrapper {
+        padding: var(--space-lg);
+    }
+    
+    .contact__social {
+        flex-direction: column;
+    }
+    
+    .contact__link,
+    .contact__social-link {
+        justify-content: center;
+    }
+    
+    .form__submit {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 /* Multi-Project Excellence Section */
