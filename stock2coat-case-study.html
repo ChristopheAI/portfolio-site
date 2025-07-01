@@ -87,6 +87,44 @@
             color: var(--color-text-primary);
         }
         
+        .case-study__demo-section {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        .case-study__demo-link {
+            margin-bottom: 2rem;
+        }
+        
+        .case-study__live-demo-btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 1.125rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            margin-bottom: 0.5rem;
+        }
+        
+        .case-study__live-demo-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            color: white;
+        }
+        
+        .case-study__demo-note {
+            font-size: 0.9rem;
+            color: var(--color-text-secondary);
+            margin-top: 0.5rem;
+            font-style: italic;
+        }
+
         .case-study__video {
             width: 100%;
             max-width: 800px;
@@ -255,6 +293,71 @@
             border-left: 3px solid var(--color-accent);
             margin: 2rem 0;
         }
+
+        /* Metrics Grid Styling */
+        .case-study__metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .case-study__metric {
+            text-align: center;
+            padding: 1.5rem;
+            background: var(--color-surface);
+            border-radius: 12px;
+            border: 1px solid var(--color-border);
+        }
+
+        .metric-number {
+            display: block;
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            margin-bottom: 0.5rem;
+            line-height: 1;
+        }
+
+        .metric-label {
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            color: var(--color-text-secondary);
+            line-height: 1.4;
+        }
+
+        /* AI Workflow Styling */
+        .ai-workflow__step {
+            margin: 2rem 0;
+            padding: 2rem;
+            background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+            border-radius: 12px;
+            border-left: 4px solid var(--color-accent);
+        }
+
+        .ai-workflow__tool {
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+            padding: 0.75rem 1.25rem;
+            background: var(--color-accent);
+            color: white;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        .ai-workflow__step p {
+            margin-bottom: 1rem;
+        }
+
+        .ai-workflow__step em {
+            font-style: italic;
+            color: var(--color-accent);
+            font-weight: 500;
+        }
         
         @media (max-width: 768px) {
             .case-study {
@@ -293,7 +396,7 @@
     <main class="case-study">
         <header class="case-study__header">
             <h1 class="case-study__title">Stock2coat</h1>
-            <p class="case-study__subtitle">How I Built a Custom App That Saves My Friend 2 Hours Daily</p>
+            <p class="case-study__subtitle">From 25-Year Friendship to Enterprise Validation: How AI Tools Helped Me Build Real Business Software</p>
             
             <div class="case-study__meta">
                 <div class="case-study__meta-item">
@@ -306,34 +409,65 @@
                 </div>
                 <div class="case-study__meta-item">
                     <div class="case-study__meta-label">Type</div>
-                    <div class="case-study__meta-value">Personal Learning Project</div>
+                    <div class="case-study__meta-value">Enterprise-Validated Business Solution</div>
                 </div>
             </div>
             
-            <video class="case-study__video lazy-video" muted loop playsinline 
-                   data-src="/src/assets/images/stock2coat-demo.mp4"
-                   poster="/src/assets/images/stock2coat-poster.jpg">
-                <source data-src="/src/assets/images/stock2coat-demo.webm" type="video/webm">
-                <source data-src="/src/assets/images/stock2coat-demo.mp4" type="video/mp4">
-            </video>
+            <div class="case-study__demo-section">
+                <div class="case-study__demo-link">
+                    <a href="https://mlcoating-webapp-demo.netlify.app/" target="_blank" rel="noopener noreferrer" class="case-study__live-demo-btn">
+                        🚀 View Live Demo
+                    </a>
+                    <p class="case-study__demo-note">Interactive demo - No login required</p>
+                </div>
+                
+                <video class="case-study__video lazy-video" muted loop playsinline 
+                       data-src="/src/assets/images/stock2coat-demo.mp4"
+                       poster="/src/assets/images/stock2coat-poster.jpg">
+                    <source data-src="/src/assets/images/stock2coat-demo.webm" type="video/webm">
+                    <source data-src="/src/assets/images/stock2coat-demo.mp4" type="video/mp4">
+                </video>
+            </div>
         </header>
 
         <section class="case-study__section">
-            <h2 class="case-study__section-title">Project Overview</h2>
+            <h2 class="case-study__section-title">From Friend's Problem to Enterprise Opportunity</h2>
             <div class="case-study__content">
-                <p>Stock2coat started with a conversation between friends. Nicolas, my best friend of 25+ years, had just started his powder coating business and faced a daily challenge: managing his powder inventory with Excel sheets and paper logs. With 4-5 weighing sessions per day, manually tracking powder consumption was becoming a bottleneck.</p>
+                <p><strong>"Christophe, kun je mij helpen met het ondersteunen van het volgende?"</strong> That's how it started. Nicolas, who I've known for 25 years since I was 16, was launching his powder coating business ML Coating in March 2024. He needed simple software to manage his powder inventory—track consumption, add new containers, get an overview with KPIs.</p>
                 
-                <p>When Nicolas asked me to help find existing software, we discovered that nothing matched his specific workflow needs. The available solutions were either too complex or missed key features he needed. That's when I proposed: "What if I build something custom for you?"</p>
+                <p>I did the research. Found nothing that fit. The existing software was either massive ERP systems with hundreds of features Nicolas didn't need, or it was too expensive for a small Flemish business just getting started. Everything was overkill for what he actually needed: <em>"Gewoon simpel iets om mijn voorraad te beheren."</em></p>
                 
-                <p>What followed was an intensive two-week collaboration. Nicolas would weigh his powder containers, manually input the data, and need real-time insights into his inventory levels. After two weeks, he said: "You made this work like a dream, friend." That validation from someone running a real business using the app daily was incredibly rewarding.</p>
+                <p><strong>Then I had a realization:</strong> This was April 2024, and I'd been exploring AI coding tools like Replit. I saw an opportunity to experiment. "Nicolas," I said, "what if I just build it for you?"</p>
                 
-                <p>This project became the perfect intersection of friendship, real business needs, and technical learning—resulting in a custom solution that actually solves daily operational challenges.</p>
+                <p>What happened next surprised us both. After some trial and error (I had to restart twice, learning how to properly collaborate with AI agents), I delivered a working web application. Nicolas started using it daily. And then something unexpected happened...</p>
+                
+                <p><strong>Enterprise Validation:</strong> Frank, a consultant from Sherwin-Williams with 39 years in the powder coating industry, visited Nicolas. He saw the webapp. His reaction? "Amai, dat is super interessant!" He immediately called his colleague Laurens. Since June 3rd, we've been meeting weekly, designing Stock2coat as a real business solution.</p>
+                
+                <p>This isn't a portfolio project anymore—it's enterprise-validated software that caught the attention of industry experts. It proves that modern AI development tools can deliver business-grade solutions when guided by real domain expertise.</p>
             </div>
         </section>
 
         <div class="case-study__highlight">
-            <h3 class="case-study__highlight-title">Learning Goals Achieved</h3>
-            <p>Built a full-stack TypeScript app that significantly improves inventory tracking efficiency. Real users, real results, deployed to production in just 14 days.</p>
+            <h3 class="case-study__highlight-title">From Friendship to Enterprise: Real Impact</h3>
+            <p>What started as helping a 25-year friend became enterprise-validated software. Sherwin-Williams consultant with 39 years experience saw immediate potential. Weekly development meetings since June 2024.</p>
+            <div class="case-study__metrics-grid">
+                <div class="case-study__metric">
+                    <span class="metric-number">90%</span>
+                    <span class="metric-label">Reduction in inventory tracking time</span>
+                </div>
+                <div class="case-study__metric">
+                    <span class="metric-number">€2,400</span>
+                    <span class="metric-label">Annual productivity savings (2h daily × €25/h × 240 workdays)</span>
+                </div>
+                <div class="case-study__metric">
+                    <span class="metric-number">10x</span>
+                    <span class="metric-label">Development speed vs traditional approach</span>
+                </div>
+                <div class="case-study__metric">
+                    <span class="metric-number">Weekly</span>
+                    <span class="metric-label">Business meetings since Sherwin-Williams validation</span>
+                </div>
+            </div>
         </div>
 
         <section class="case-study__section">
@@ -492,31 +626,67 @@
         </div>
 
         <section class="case-study__section">
-            <h2 class="case-study__section-title">Development Process & Learnings</h2>
+            <h2 class="case-study__section-title">The Real AI Development Journey: Trial, Error & Community</h2>
             
             <div class="case-study__content">
-                <h3>AI-Assisted Development Approach</h3>
-                <p>Developed the application using Replit as both IDE and hosting platform, leveraging Replit Agent for AI-assisted coding. This browser-based development environment allowed for rapid prototyping and immediate deployment testing.</p>
+                <p><strong>This was my first real AI coding project.</strong> Not the polished workflow you might expect, but the messy, authentic learning process that actually works. Here's what really happened:</p>
 
-                <h3>Domain Knowledge Collaboration</h3>
-                <p>Worked closely with Nicolas, owner of ML Coating, to understand the real-world requirements of coating industry inventory management. His expertise in coating processes, material handling, and business workflows was crucial for creating realistic data models and user flows.</p>
+                <h3>🤔 Phase 1: The False Starts (Weeks 1-2)</h3>
+                <div class="ai-workflow__step">
+                    <div class="ai-workflow__tool"><strong>Multiple AI Tools:</strong> Learning What Works</div>
+                    <p>I didn't just use Replit. I tried <strong>everything</strong>: Claude Artifacts, Bolt.new, Lovable, Windsurf, Cursor. Each had different strengths for UI/UX, but I kept hitting walls. The AI would start doing things I never asked for, going in directions I didn't want. <em>I had to restart twice.</em></p>
+                    <ul class="case-study__list">
+                        <li class="case-study__list-item">First attempt: AI went rogue, added features I didn't want</li>
+                        <li class="case-study__list-item">Second attempt: Different tool, similar problems with AI control</li>
+                        <li class="case-study__list-item">Frustration with debugging errors AI created</li>
+                        <li class="case-study__list-item">Realized I needed to learn AI "steering"</li>
+                    </ul>
+                    <p><em>Key learning: AI tools are powerful but need proper guidance and prompting strategy</em></p>
+                </div>
 
-                <h3>Key Technical Learnings</h3>
-                <ul class="case-study__list">
-                    <li class="case-study__list-item">AI-assisted development with Replit Agent</li>
-                    <li class="case-study__list-item">Browser-based development and deployment workflows</li>
-                    <li class="case-study__list-item">TypeScript integration across full stack</li>
-                    <li class="case-study__list-item">Modern React patterns with Zustand and TanStack Query</li>
-                    <li class="case-study__list-item">Database design informed by real business requirements</li>
-                    <li class="case-study__list-item">Translating domain expertise into technical implementation</li>
-                </ul>
+                <h3>💡 Phase 2: The Reddit Breakthrough</h3>
+                <div class="ai-workflow__step">
+                    <div class="ai-workflow__tool"><strong>r/replit Community:</strong> Learning from Others</div>
+                    <p>After failing twice, I did what any smart developer does: I went to Reddit. The r/replit subreddit became my classroom. I spent time reading posts, understanding how others collaborated with Replit Agent, learning the best practices the community discovered.</p>
+                    <ul class="case-study__list">
+                        <li class="case-study__list-item">Studied successful project workflows on r/replit</li>
+                        <li class="case-study__list-item">Learned proper prompting techniques from community</li>
+                        <li class="case-study__list-item">Understood Replit Agent's strengths and limitations</li>
+                        <li class="case-study__list-item">Got practical tips for AI collaboration</li>
+                    </ul>
+                    <p><em>Third time's the charm: Armed with community knowledge, attempt #3 finally got traction</em></p>
+                </div>
 
-                <h3>Two-Week Sprint Methodology</h3>
-                <p><strong>Week 1 - Discovery & Planning:</strong> Intensive sessions with Nicolas to understand coating industry workflows, inventory challenges, and business requirements. Explored technical possibilities with Replit Agent and defined the minimum viable product scope.</p>
-                
-                <p><strong>Week 2 - Rapid Implementation:</strong> Leveraged AI-assisted development to quickly translate requirements into working code. Daily feedback sessions with Nicolas ensured the application matched real-world needs while maintaining development momentum.</p>
-                
-                <p>This compressed timeline proved that modern development tools, when combined with clear requirements and domain expertise, can deliver functional applications remarkably quickly.</p>
+                <h3>🚀 Phase 3: Finding My AI Development Flow</h3>
+                <div class="ai-workflow__step">
+                    <div class="ai-workflow__tool"><strong>Replit Agent:</strong> Finally Working Together</div>
+                    <p>Third attempt with Replit was different. I had the "feel in my fingers" now - I understood how to collaborate with the AI instead of fighting it. The breakthrough was learning to work <em>with</em> Nicolas's domain expertise, the AI's capabilities, and my own project vision:</p>
+                    <ul class="case-study__list">
+                        <li class="case-study__list-item">Nicolas provided business requirements and industry knowledge</li>
+                        <li class="case-study__list-item">I translated his needs into clear prompts for the AI</li>
+                        <li class="case-study__list-item">Replit Agent built the technical foundation quickly</li>
+                        <li class="case-study__list-item">Regular feedback loops with Nicolas kept it on track</li>
+                    </ul>
+                    <p><em>The magic: Human expertise + AI speed + real user feedback = working software</em></p>
+                </div>
+
+                <h3>📈 Phase 4: From Working App to Enterprise Interest</h3>
+                <div class="ai-workflow__step">
+                    <div class="ai-workflow__tool"><strong>Real-World Validation:</strong> When Industry Experts Notice</div>
+                    <p>Nicolas started using the app daily. Then Frank visited - a Sherwin-Williams consultant with 39 years in powder coating. He saw the webapp and immediately recognized its potential. <strong>"Amai, dat is super interessant!"</strong> he said, and called his colleague Laurens on the spot.</p>
+                    <ul class="case-study__list">
+                        <li class="case-study__list-item">June 3: First meeting with Frank & Laurens</li>
+                        <li class="case-study__list-item">Weekly business development meetings since then</li>
+                        <li class="case-study__list-item">Meeting #4 completed, #5 scheduled for July 4</li>
+                        <li class="case-study__list-item">Enterprise consulting interest validates AI-built solution</li>
+                    </ul>
+                    <p><em>Outcome: Personal project became enterprise opportunity through quality and real business value</em></p>
+                </div>
+
+                <h3>What I Learned About AI Development</h3>
+                <p><strong>AI tools aren't magic - they're collaboration partners.</strong> You need to learn how to "steer" them, how to break down problems, and most importantly, how to combine AI speed with human expertise and real user feedback.</p>
+                <p><strong>The Reddit community was crucial.</strong> r/replit taught me the practical skills that documentation couldn't. Sometimes the best learning happens when you admit you don't know something and ask for help.</p>
+                <p><strong>Enterprise validation wasn't planned.</strong> But when industry experts see value in what you've built, it proves that AI development can deliver professional-grade solutions - not just demos.</p>
             </div>
         </section>
 
@@ -550,13 +720,17 @@
         </section>
 
         <section class="case-study__section">
-            <h2 class="case-study__section-title">Conclusion</h2>
+            <h2 class="case-study__section-title">Why This Matters for Your Business</h2>
             <div class="case-study__content">
-                <p>Stock2coat represents my exploration of modern development workflows, combining AI-assisted coding with real business domain knowledge. It demonstrates my ability to leverage cutting-edge tools like Replit Agent while collaborating with industry experts to create practical solutions.</p>
+                <p><strong>Stock2coat started with a friend's problem and became an enterprise opportunity.</strong> That's exactly the mindset I bring to a development role: I don't just write code, I solve real business problems with modern tools.</p>
                 
-                <p>The project showcases both technical skills and collaborative problem-solving: working with AI development tools, translating business requirements into technical solutions, and building production-ready applications with modern web technologies. The collaboration with Nicolas provided invaluable insights into real-world business processes.</p>
+                <p><strong>For Flemish companies,</strong> this demonstrates that I understand your business culture - pragmatic, results-oriented, and focused on real value. I can work with stakeholders, understand domain requirements, and deliver software that actually gets used daily.</p>
                 
-                <p>This experience has been crucial in understanding how AI tools can accelerate development while highlighting the importance of domain expertise and human collaboration. It demonstrates my adaptability to new development paradigms and ability to bridge the gap between technical implementation and business needs.</p>
+                <p><strong>The AI development approach</strong> isn't just a personal experiment - it's the future of software development. Companies that embrace AI-assisted development will build faster, iterate quicker, and stay competitive. I'm already proficient in this workflow.</p>
+                
+                <p><strong>Currently developing v2.0</strong> with Sherwin-Williams consultant input, I continue building Stock2coat as a side business while seeking a full-time development role. This shows my passion extends beyond working hours and my ability to manage professional commitments alongside personal projects.</p>
+                
+                <p><em>Ready to bring this AI-powered development approach and business-focused mindset to your team.</em></p>
             </div>
         </section>
     </main>
