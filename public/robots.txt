@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Important pages
+Sitemap: https://christophevh.dev/sitemap.xml
+
+# High-value content
+Allow: /
+Allow: /stock2coat-case-study.html
+
+# Block unnecessary paths
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /tests/
+Disallow: *.map

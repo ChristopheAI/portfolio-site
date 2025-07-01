@@ -4,14 +4,19 @@ id: projects
 section: Featured Projects
 --------------------------
 
-# Projects Copy
+# Featured Projects
 
-## Stock2coat
+## ML Coating (live)
 
-Subtitle: Inventory Forecasting Power\
-Description: Cuts powder-coating stockouts by 90 %. React 18 + TypeScript frontend, Node.js API, PostgreSQL via Neon, all wrapped in a sleek shadcn/ui interface.
+Subtitle: Realtime voorraadbeheer in de spuitcabine
+Description: Productie­app gebouwd in 2 weken. React 18 + TypeScript + Tailwind frontend, Node.js/Express API, Neon Postgres. Bespaart 2 uur per dag en reduceert voorraadfouten met 90 %.
+
+## Stock2Coat (launch sept 2025)
+
+Subtitle: SaaS voor 800 + poedercoaters
+Description: Multi-tenant opvolger van ML Coating met AI-voorraad­voorspelling, schaal­baar via Replit Autoscale.
 
 ## Portfolio Website
 
-Subtitle: Loads in under 1 second\
-Description: You're browsing it now: vanilla JS, modern CSS, 100/100 Lighthouse and 1 s load on 3G.
+Subtitle: 100/100 Lighthouse & < 1 s load
+Description: Deze site toont mijn pragmatische build-strategie: vanilla JS + Vite, Playwright-tests en performance benchmarking.

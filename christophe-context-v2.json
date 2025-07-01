@@ -1,0 +1,347 @@
+{
+  "meta": {
+    "profile_version": "2.0",
+    "profile_type": "personal_context",
+    "last_updated": "2025-01-06",
+    "purpose": "Comprehensive personal context for AI interactions and portfolio development",
+    "usage": "Load this profile when working with AI tools for consistent, personalized outputs"
+  },
+  
+  "todo_complete_profile": {
+    "salary_expectation": "[TO BE FILLED: Minimum acceptable salary?]",
+    "english_level": "[TO BE FILLED: Professional/Conversational/Basic?]",
+    "portfolio_style": "[TO BE FILLED: Clean/Modern/Bold/Technical?]",
+    "dream_companies": "[TO BE FILLED: Top 3 target companies in Belgium?]",
+    "deal_breakers": "[TO BE FILLED: What would make you say no to a job?]",
+    "biggest_technical_win": "[TO BE FILLED: Most complex problem solved?]"
+  },
+  
+  "executive_summary": {
+    "headline": "AI-Native Full-Stack Developer | Built Production Apps | Co-Founder Stock2Coat",
+    "proof_points": [
+      "ML Coating: Live production webapp built for friend's business",
+      "Stock2Coat: Commercial B2B SaaS launching September 2025 (800+ target customers)",
+      "100% AI-assisted development workflow (Replit, Cursor, Claude)",
+      "From idea to production in weeks, not months"
+    ],
+    "unique_combination": [
+      "Business acumen (600+ IT manager conversations)",
+      "Technical execution (React, TypeScript, Node.js)",
+      "AI mastery (5+ hours daily practice)",
+      "Entrepreneurial drive (active co-founder)"
+    ],
+    "seeking": "Mid-level developer role at innovative company while continuing Stock2Coat as side project",
+    "availability": "Immediate (not working since April 2025)",
+    "location": "Antwerp area, open to remote/hybrid"
+  },
+  
+  "developer_journey": {
+    "started": "Early 2025",
+    "approach": "100% AI-native learning",
+    "daily_practice": "5+ hours coding with AI assistance",
+    "learning_philosophy": "Build real products, not tutorials",
+    "biggest_achievement": "2 production B2B SaaS apps (ML Coating live + Stock2Coat)",
+    "current_status": "Ready for professional development role",
+    "work_status": "Available immediately (not working since April 2025)",
+    "family_situation": {
+      "status": "Father of 2 young children",
+      "impact": "Motivated for stable income & work-life balance"
+    },
+    "parallel_commitment": {
+      "project": "Stock2Coat",
+      "role": "Technical Co-Founder",
+      "time_commitment": "Evenings/weekends",
+      "launch_date": "September 1, 2025",
+      "employer_transparency": "Open about side project - shows entrepreneurial drive"
+    }
+  },
+  
+  "personal_identity": {
+    "full_name": "Christophe",
+    "alias": "VibeCoder",
+    "location": {
+      "city": "Schilde/Zoersel area",
+      "province": "Antwerpen",
+      "country": "Belgium",
+      "timezone": "Europe/Brussels"
+    },
+    "philosophy": "Follow my curiosities in life",
+    "approach": "Resultaatgericht, leren door te doen met AI-tools",
+    "personality_traits": [
+      "Leergierig",
+      "Volhardend bij technische uitdagingen",
+      "Praktisch ingesteld",
+      "Ondernemend"
+    ]
+  },
+  
+  "professional_journey": {
+    "current_phase": {
+      "status": "Active Developer",
+      "from": "IT System/Network Engineer & Business Developer",
+      "to": "Full-Stack Developer (AI-Native)",
+      "goal": "Developer positie in loondienst",
+      "timeline": "Immediate availability (stopped working April 2025)",
+      "daily_commitment": "5+ hours coding/learning per day",
+      "self_identity": [
+        "Developer die AI tools gebruikt",
+        "Business Problem Solver met technische skills"
+      ]
+    },
+    
+    "experience_timeline": [
+      {
+        "period": "2015-2019",
+        "role": "Founder/Owner",
+        "company": "Fixzit",
+        "description": "Volledig IT-beheer voor KMO's",
+        "key_learnings": [
+          "Interesse in sales en marketing aangewakkerd",
+          "Ondernemerservaring",
+          "Klantgericht werken"
+        ]
+      },
+      {
+        "period": "Pre-2015 to present",
+        "role": "System/Network Engineer",
+        "expertise": {
+          "general_IT": ["Windows clients", "Office 365", "Hardware config", "Cisco Telepresence"],
+          "servers": ["Windows Server", "Exchange", "VMware", "Linux (basis)", "Back-up"],
+          "network": ["Firewalls/routers/switches", "Fortinet ervaring", "Netwerkmigraties"],
+          "scripting": ["CMD", "PowerShell (basis)"],
+          "cloud": ["Azure", "Google Cloud", "Google Workspace"]
+        }
+      },
+      {
+        "period": "Various",
+        "roles": ["Account Manager", "Business Developer"],
+        "achievements": [
+          "600+ IT-managers gesproken",
+          "Hunter-profiel",
+          "Cold calling expertise"
+        ]
+      }
+    ]
+  },
+  
+  "technical_profile": {
+    "current_focus": {
+      "primary_languages": ["JavaScript", "TypeScript"],
+      "learning_style": "Output-oriented - focus on building working applications",
+      "frameworks_exploring": ["React", "Next.js", "Node.js"],
+      "development_areas": {
+        "frontend": true,
+        "api_backend": true,
+        "cloud_exploration": true
+      }
+    },
+    
+    "ai_tools_ecosystem": {
+      "primary_tools": {
+        "Replit": "Complete app development & deployment",
+        "Cursor": "Code editing with AI assistance",
+        "Claude Code": "Complex code generation",
+        "Lovable": "Full-stack app development",
+        "Bolt": "Rapid prototyping",
+        "V-Zero": "Code generation",
+        "Windsurf": "AI coding assistant",
+        "ChatGPT": "Strategic planning & research"
+      },
+      "proficiency": "Advanced - fully AI-native development approach",
+      "workflow": "Research → AI planning → Replit Agent execution → Deployment",
+      "insights": [
+        "AI-tools zoals Bolt/Lovable kunnen vastlopen bij backend-taken",
+        "Knows when to switch between tools for optimal results",
+        "Can debug and fix when AI suggestions fail"
+      ],
+      "daily_usage": "5+ hours immersed in AI-assisted development"
+    },
+    
+    "completed_projects": [
+      {
+        "name": "ML Coating Inventory System",
+        "type": "Real-time inventory management webapp",
+        "status": "Live in production",
+        "client": "Nicolas (beste maat)",
+        "role": "Sole Developer",
+        "description": "Custom-built inventory tracking webapp for friend's powder coating business",
+        "features": [
+          "Weight-based consumption tracking via scale",
+          "Purchase price tracking per powder box",
+          "Dashboard with total inventory value",
+          "KPI visualization",
+          "Consumption history tracking",
+          "Real-time stock updates"
+        ],
+        "tech_stack": {
+          "frontend": ["React 18", "TypeScript", "Vite", "shadcn/ui", "Tailwind CSS", "Zustand", "TanStack Query"],
+          "backend": ["Node.js", "Express.js", "TypeScript", "Drizzle ORM"],
+          "database": "Neon (PostgreSQL serverless)",
+          "hosting": "Replit Autoscale Deployments"
+        },
+        "business_impact": "Helped friend digitize inventory management",
+        "development_approach": "AI-assisted development using Replit Agent",
+        "relationship": "Personal project for beste maat"
+      },
+      {
+        "name": "Stock2Coat (voorheen CoatControl Pro)",
+        "type": "B2B SaaS for powder coating inventory",
+        "status": "In development - Launch September 2025",
+        "role": "Technical Co-Founder / Lead Developer",
+        "partners": "Frank & Loudens",
+        "description": "Scaling ML Coating concept to full B2B SaaS product",
+        "target_market": "800+ powder coating companies in Belgium",
+        "timeline": "4th meeting completed, building towards September launch"
+      },
+      {
+        "name": "X/Twitter Profile Analyzer Chrome Extension",
+        "type": "Social Intelligence Tool",
+        "status": "Built and functional",
+        "purpose": "Extract and analyze Twitter/X profiles for sales intelligence",
+        "technologies": ["JavaScript", "Chrome APIs"],
+        "workflow": "Extract posts → Export to ChatGPT/Claude → Generate insights",
+        "business_value": "Better prospect understanding for personalized outreach"
+      }
+    ],
+    
+    "learning_resources": {
+      "community": "Praktijkgericht leren via school community",
+      "social": "X (Twitter) - Dagelijks actief",
+      "approach": "Learning in public"
+    }
+  },
+  
+  "goals_and_aspirations": {
+    "immediate_goals": {
+      "portfolio": {
+        "purpose": "Werkende apps bouwen als bewijs van kunnen",
+        "website": "Eigen website als portfoliohub",
+        "strategy": "Gebruik als bewijs bij sollicitaties"
+      },
+      
+      "job_search": {
+        "target_roles": [
+          "Full-Stack Developer",
+          "Frontend Developer (with backend capabilities)",
+          "Product Developer",
+          "Technical Co-Founder"
+        ],
+        "level": "Mid-level (based on project complexity, not years)",
+        "employment_type": "In loondienst (full-time)",
+        "preferred_environment": ["Startup", "Scale-up", "Tech company", "SaaS"],
+        "location_preference": "Belgium (Antwerp area preferred, Brussels possible)",
+        "remote_preference": ["Remote", "Hybrid"],
+        "salary_expectation": "€45-65k (mid-level range)",
+        "unique_angle": "Developer who ships - proven with production SaaS"
+      }
+    },
+    
+    "unique_projects": {
+      "thinking_partner_gem": {
+        "concept": "Personal AI assistant for development",
+        "functions": [
+          "Ideeënontwikkeling",
+          "Tool-advies",
+          "Keuzehulp projectmanagement"
+        ],
+        "dual_purpose": "Persoonlijk hulpmiddel & portfolio-item",
+        "status": "In development"
+      }
+    },
+    
+    "business_strategy": {
+      "approach": "Localization of successful apps",
+      "market": "Belgische markt",
+      "advantage": "Understanding of local market needs + technical skills"
+    }
+  },
+  
+  "unique_value_proposition": {
+    "positioning": "AI-Native Full-Stack Developer with Business Acumen",
+    "combination": "Technical skills + Business understanding + AI mastery + Sales experience",
+    "strengths": [
+      "Built 2 production SaaS apps (ML Coating live, Stock2Coat launching) using AI-first approach",
+      "600+ conversations with IT managers - deep market understanding",
+      "Entrepreneurial experience - knows how to deliver value",
+      "Modern tech stack proficiency (React, TypeScript, Node.js)",
+      "5+ hours daily AI-assisted development practice"
+    ],
+    "differentiators": [
+      "Ships working products in weeks, not months",
+      "Business-minded developer who understands ROI",
+      "Can talk to both technical and non-technical stakeholders",
+      "Results-oriented approach from business background",
+      "Master of AI development tools - knows entire ecosystem"
+    ],
+    "proof_of_concept": "ML Coating (live) + Stock2Coat (launching) - from idea to production SaaS"
+  },
+  
+  "communication_preferences": {
+    "language": {
+      "primary": "Dutch/Nederlands",
+      "comfortable_with": ["English", "French"],
+      "code_comments": "English"
+    },
+    "style": {
+      "preferred": "Direct and practical",
+      "tone": "Professional yet approachable",
+      "ai_interaction": "Conversational, explain reasoning"
+    }
+  },
+  
+  "interests_and_expansion": {
+    "psychology": {
+      "marketing_psychology": true,
+      "trigger": "Ervaring als zelfstandige",
+      "self_study": "Ongoing"
+    },
+    "continuous_learning": [
+      "Frontend technologies",
+      "AI tool optimization",
+      "Business strategy",
+      "Product development"
+    ]
+  },
+  
+  "context_for_ai_tools": {
+    "when_coding": {
+      "preference": "Working code over perfect code",
+      "style": "Pragmatic, get things done",
+      "help_needed": "Architecture decisions, best practices, debugging"
+    },
+    "when_designing": {
+      "preference": "Clean, modern, functional",
+      "inspiration": "Successful SaaS products",
+      "avoid": "Overengineered solutions"
+    },
+    "when_planning": {
+      "approach": "Start with MVP, iterate based on feedback",
+      "priority": "User value over technical perfection"
+    }
+  },
+  
+  "portfolio_context": {
+    "headline": "From Business to Code: Shipping Production Software with AI",
+    "target_audience": [
+      "CTOs at startups/scale-ups",
+      "Technical founders",
+      "Engineering managers who value business understanding",
+      "Companies embracing AI-assisted development"
+    ],
+    "key_messages": [
+      "Full-stack developer who ships production code",
+      "Built 2 complete B2B SaaS apps from scratch (ML Coating + Stock2Coat)",
+      "Business background ensures focus on user value",
+      "Master of modern AI development workflow",
+      "Available immediately with proven results"
+    ],
+    "portfolio_projects": [
+      "ML Coating - Production webapp for friend's business (live & in use)",
+      "Stock2Coat - Commercial B2B SaaS launching September 2025",
+      "Chrome Extension for Social Intelligence",
+      "Technical blog posts about AI-assisted development",
+      "Open source contributions (to be added)"
+    ],
+    "desired_outcome": "Job offers for mid-level developer positions at innovative companies"
+  }
+}

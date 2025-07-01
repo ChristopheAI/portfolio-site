@@ -1,0 +1,329 @@
+{
+  "timestamp": "2025-06-28T11:56:28.924Z",
+  "url": "http://localhost:3000",
+  "summary": {
+    "performance": 100,
+    "accessibility": 100,
+    "content": 100,
+    "visual": 100
+  },
+  "details": {
+    "performance": {
+      "loadTime": 975,
+      "failedRequests": [],
+      "score": 100
+    },
+    "accessibility": {
+      "headings": [
+        {
+          "level": 1,
+          "text": "Hi, ik ben\n                            Christophe",
+          "index": 0
+        },
+        {
+          "level": 2,
+          "text": "Mijn Projecten",
+          "index": 1
+        },
+        {
+          "level": 3,
+          "text": "Stock2coat",
+          "index": 2
+        },
+        {
+          "level": 3,
+          "text": "Portfolio Website",
+          "index": 3
+        },
+        {
+          "level": 2,
+          "text": "AI-Enhanced Development: Uw Concurrentievoordeel",
+          "index": 4
+        },
+        {
+          "level": 3,
+          "text": "Stock2coat: Enterprise Solution voor ML Coating",
+          "index": 5
+        },
+        {
+          "level": 4,
+          "text": "ChatGPT: Het Probleem Uitleggen",
+          "index": 6
+        },
+        {
+          "level": 4,
+          "text": "Replit: Gewoon Beginnen",
+          "index": 7
+        },
+        {
+          "level": 4,
+          "text": "Claude: De Code Verbeteren",
+          "index": 8
+        },
+        {
+          "level": 4,
+          "text": "Replit: Direct Live",
+          "index": 9
+        },
+        {
+          "level": 3,
+          "text": "Deze Website: Van Niks naar Wat Je Nu Ziet",
+          "index": 10
+        },
+        {
+          "level": 4,
+          "text": "ChatGPT: De Strategie",
+          "index": 11
+        },
+        {
+          "level": 4,
+          "text": "Cursor: Code Die Zichzelf Schrijft",
+          "index": 12
+        },
+        {
+          "level": 4,
+          "text": "MCP Tools: Het Geheime Wapen",
+          "index": 13
+        },
+        {
+          "level": 4,
+          "text": "Claude: De Laatste Puntjes",
+          "index": 14
+        },
+        {
+          "level": 3,
+          "text": "Waarom Dit Werkt",
+          "index": 15
+        },
+        {
+          "level": 2,
+          "text": "Mijn 17-Jaar Tech Reis",
+          "index": 16
+        },
+        {
+          "level": 4,
+          "text": "De Tools Die Ik Gebruik",
+          "index": 17
+        },
+        {
+          "level": 4,
+          "text": "Echte Ervaring",
+          "index": 18
+        },
+        {
+          "level": 4,
+          "text": "Wat Dit Voor Jou Betekent",
+          "index": 19
+        },
+        {
+          "level": 3,
+          "text": "🚀 Klaar Om Iets Bijzonders Te Bouwen?",
+          "index": 20
+        },
+        {
+          "level": 2,
+          "text": "Werk Geschiedenis",
+          "index": 21
+        },
+        {
+          "level": 3,
+          "text": "AI-Powered Frontend Developer",
+          "index": 22
+        },
+        {
+          "level": 3,
+          "text": "Business Developer",
+          "index": 23
+        },
+        {
+          "level": 3,
+          "text": "Business Developer",
+          "index": 24
+        },
+        {
+          "level": 3,
+          "text": "Business Developer",
+          "index": 25
+        },
+        {
+          "level": 3,
+          "text": "System Engineer",
+          "index": 26
+        },
+        {
+          "level": 3,
+          "text": "IT Verantwoordelijke",
+          "index": 27
+        },
+        {
+          "level": 3,
+          "text": "IT Support & Troubleshooting Engineer",
+          "index": 28
+        },
+        {
+          "level": 3,
+          "text": "🔄 De Plot Twist",
+          "index": 29
+        },
+        {
+          "level": 2,
+          "text": "Wat Mijn Achtergrond Anders Maakt Voor B2B Bedrijv",
+          "index": 30
+        },
+        {
+          "level": 3,
+          "text": "Diepe Enterprise Systems Ervaring",
+          "index": 31
+        },
+        {
+          "level": 3,
+          "text": "Multi-Client Project Management",
+          "index": 32
+        },
+        {
+          "level": 3,
+          "text": "User Experience Perspectief",
+          "index": 33
+        },
+        {
+          "level": 3,
+          "text": "Enterprise Software Kwaliteit Standaarden",
+          "index": 34
+        },
+        {
+          "level": 3,
+          "text": "Echte Business Impact Focus",
+          "index": 35
+        },
+        {
+          "level": 3,
+          "text": "De Conclusie",
+          "index": 36
+        },
+        {
+          "level": 3,
+          "text": "Technologie Stack Voor Enterprise",
+          "index": 37
+        },
+        {
+          "level": 2,
+          "text": "Waarmee Ik Werk",
+          "index": 38
+        },
+        {
+          "level": 3,
+          "text": "Frontend",
+          "index": 39
+        },
+        {
+          "level": 3,
+          "text": "Backend & Database",
+          "index": 40
+        },
+        {
+          "level": 3,
+          "text": "AI & Tools",
+          "index": 41
+        },
+        {
+          "level": 2,
+          "text": "Klaar Om Samen Te Bouwen?",
+          "index": 42
+        },
+        {
+          "level": 3,
+          "text": "💬 Stuur Een Bericht",
+          "index": 43
+        },
+        {
+          "level": 3,
+          "text": "🔗 Verbinden",
+          "index": 44
+        },
+        {
+          "level": 3,
+          "text": "📧 Direct Contact",
+          "index": 45
+        }
+      ],
+      "images": [
+        {
+          "src": "http://localhost:3000/src/assets/images/avatar-christophe.jpg",
+          "alt": "Christophe - Frontend Developer",
+          "hasAlt": true
+        },
+        {
+          "src": "http://localhost:3000/src/assets/images/portfolio-preview.jpg",
+          "alt": "Portfolio website homepage",
+          "hasAlt": true
+        }
+      ],
+      "imagesWithoutAlt": 0,
+      "score": 100
+    },
+    "content": {
+      "title": "Christophe - Frontend Developer Portfolio",
+      "metaDescription": "Enterprise-savvy frontend developer turning 17 years of infrastructure expertise into fast, intuitive web apps like Stock2coat. Open to new opportunities.",
+      "wordCount": 1524,
+      "sections": {
+        "hero": true,
+        "about": true,
+        "projects": true,
+        "contact": true
+      },
+      "dutchTermsFound": [
+        "vlaams",
+        "gent"
+      ],
+      "b2bTermsFound": [
+        "enterprise",
+        "b2b",
+        "software",
+        "development",
+        "business"
+      ],
+      "hasDutchContent": true,
+      "hasB2bContent": true,
+      "score": 100
+    },
+    "visual": {
+      "brokenImages": [],
+      "brokenImagesCount": 0,
+      "stylesheets": [
+        "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+        "http://localhost:3000/src/css/main.css"
+      ],
+      "score": 100
+    },
+    "responsive": [
+      {
+        "breakpoint": "Mobile",
+        "width": 375,
+        "height": 667,
+        "hasHorizontalScroll": false,
+        "screenshot": "portfolio-mobile.png"
+      },
+      {
+        "breakpoint": "Tablet",
+        "width": 768,
+        "height": 1024,
+        "hasHorizontalScroll": false,
+        "screenshot": "portfolio-tablet.png"
+      },
+      {
+        "breakpoint": "Desktop",
+        "width": 1920,
+        "height": 1080,
+        "hasHorizontalScroll": false,
+        "screenshot": "portfolio-desktop.png"
+      }
+    ]
+  },
+  "screenshots": [
+    "portfolio-mobile.png",
+    "portfolio-tablet.png",
+    "portfolio-desktop.png"
+  ],
+  "recommendations": [],
+  "overallScore": 100
+}

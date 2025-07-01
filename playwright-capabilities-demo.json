@@ -1,0 +1,52 @@
+{
+  "timestamp": "2025-06-28T11:35:37.169Z",
+  "capabilities": {
+    "interactive": {
+      "clickableLinks": 17,
+      "hoverElements": 19,
+      "keyboardNav": true,
+      "smoothScroll": true
+    },
+    "navigation": {
+      "internal": 12,
+      "external": 4,
+      "anchors": 10
+    },
+    "performance": {
+      "loadTime": 951,
+      "domContentLoaded": 4.5,
+      "loadComplete": 0.5,
+      "firstPaint": 300,
+      "firstContentfulPaint": 300,
+      "resourceCount": 13
+    },
+    "accessibility": {
+      "headings": 46,
+      "imagesWithoutAlt": 0,
+      "focusableElements": 23
+    },
+    "network": {
+      "failedRequests": 0,
+      "slowRequests": 0,
+      "brokenResources": 0
+    },
+    "mobile": {
+      "touchTargets": 19,
+      "mobileNav": true,
+      "responsiveImages": 0
+    },
+    "pdf": {
+      "generated": true,
+      "path": "portfolio.pdf"
+    }
+  },
+  "summary": {
+    "interactiveTesting": "✅ Complete",
+    "navigationTesting": "✅ Complete",
+    "performanceMonitoring": "✅ Complete",
+    "accessibilityTesting": "✅ Complete",
+    "networkMonitoring": "✅ Complete",
+    "mobileTesting": "✅ Complete",
+    "pdfGeneration": "✅ Complete"
+  }
+}

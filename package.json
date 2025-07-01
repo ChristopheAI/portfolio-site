@@ -13,9 +13,9 @@
     "build": "vite build",
     "preview": "vite preview",
     "copy:lint": "remark content -qfo && alex content",
-    "deploy:netlify": "npm run build && netlify deploy --prod --dir=dist",
-    "deploy:vercel": "npm run build && vercel --prod",
-    "test:build": "npm run build && npm run preview"
+    "deploy:netlify": "yarn build && netlify deploy --prod --dir=dist",
+    "deploy:vercel": "yarn build && vercel --prod",
+    "test:build": "yarn build && yarn preview"
   },
   "keywords": [
     "portfolio",
@@ -34,11 +34,17 @@
   },
   "license": "ISC",
   "devDependencies": {
+    "@playwright/test": "^1.53.1",
     "alex": "^9.0.1",
     "axe-playwright": "^2.1.0",
     "lighthouse": "^12.6.1",
+    "playwright": "^1.53.1",
     "remark-cli": "^11.0.0",
+    "terser": "^5.43.1",
     "vite": "^6.3.5",
     "write-good": "^1.0.8"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
   }
 }

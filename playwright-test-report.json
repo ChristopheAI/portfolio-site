@@ -1,0 +1,111 @@
+{
+  "timestamp": "2025-06-28T11:28:25.110Z",
+  "summary": {
+    "totalTests": 16,
+    "passedTests": 15,
+    "failedTests": 0,
+    "warningTests": 1,
+    "successRate": 94
+  },
+  "results": [
+    {
+      "test": "Page Load",
+      "status": "PASS",
+      "message": "Page loaded successfully",
+      "timestamp": "2025-06-28T11:28:12.595Z"
+    },
+    {
+      "test": "Navigation Links",
+      "status": "PASS",
+      "message": "Found 17 navigation links",
+      "timestamp": "2025-06-28T11:28:12.668Z"
+    },
+    {
+      "test": "Console Errors",
+      "status": "PASS",
+      "message": "No console errors detected",
+      "timestamp": "2025-06-28T11:28:14.673Z"
+    },
+    {
+      "test": "Load Time",
+      "status": "PASS",
+      "message": "Page loaded in 782ms",
+      "timestamp": "2025-06-28T11:28:15.456Z"
+    },
+    {
+      "test": "Network Requests",
+      "status": "PASS",
+      "message": "All network requests successful",
+      "timestamp": "2025-06-28T11:28:17.459Z"
+    },
+    {
+      "test": "Heading Structure",
+      "status": "PASS",
+      "message": "Found 46 headings",
+      "timestamp": "2025-06-28T11:28:17.489Z"
+    },
+    {
+      "test": "Image Alt Text",
+      "status": "PASS",
+      "message": "All images have alt text",
+      "timestamp": "2025-06-28T11:28:17.494Z"
+    },
+    {
+      "test": "Broken Images",
+      "status": "PASS",
+      "message": "No broken images detected",
+      "timestamp": "2025-06-28T11:28:17.496Z"
+    },
+    {
+      "test": "Content Length",
+      "status": "PASS",
+      "message": "1524 words of content",
+      "timestamp": "2025-06-28T11:28:17.501Z"
+    },
+    {
+      "test": "Dutch Content",
+      "status": "WARN",
+      "message": "No Dutch/Flemish content detected",
+      "timestamp": "2025-06-28T11:28:17.501Z"
+    },
+    {
+      "test": "B2B Content",
+      "status": "PASS",
+      "message": "Found 4 B2B terms",
+      "timestamp": "2025-06-28T11:28:17.502Z"
+    },
+    {
+      "test": "CSS Loading",
+      "status": "PASS",
+      "message": "2 stylesheets loaded",
+      "timestamp": "2025-06-28T11:28:17.510Z"
+    },
+    {
+      "test": "Responsive Meta",
+      "status": "PASS",
+      "message": "Viewport meta tag present",
+      "timestamp": "2025-06-28T11:28:17.541Z"
+    },
+    {
+      "test": "Mobile Layout",
+      "status": "PASS",
+      "message": "No horizontal scroll",
+      "timestamp": "2025-06-28T11:28:19.968Z"
+    },
+    {
+      "test": "Tablet Layout",
+      "status": "PASS",
+      "message": "No horizontal scroll",
+      "timestamp": "2025-06-28T11:28:22.602Z"
+    },
+    {
+      "test": "Desktop Layout",
+      "status": "PASS",
+      "message": "No horizontal scroll",
+      "timestamp": "2025-06-28T11:28:25.086Z"
+    }
+  ],
+  "recommendations": [
+    "Improve: Dutch Content - No Dutch/Flemish content detected"
+  ]
+}
